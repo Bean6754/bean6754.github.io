@@ -11,17 +11,13 @@
     <p>nftables is a userspace firewall that was created for the Linux networking stack.</p>
     <p>It is very different from iptables because it it supposed to replace certain parts of netfilter.</p>
     <p>I.E: nftables replaces the popular {ip,ip6,arp,eb}tables.</p>
-    <p>The syntax is also very different:</p>
+    
+    <br><p>The syntax is also very different:</p>
     <p>(A command to drop any packets with the destination IP address 1.2.3.4)</p>
-    <p>nftables</p>
-    <code>
-nft add rule ip filter output ip daddr 1.2.3.4 drop
-    </code>
-    <p>iptables</p>
-    <code>
-iptables -A OUTPUT -d 1.2.3.4 -j DROP
-    </code>
-    <p><i>iptables</i> only applies to IPv4, whereas <i>ip6tables</i> will apply to IPv6, <i>arptables</i> will apply to ARP and <i>ebtables</i> will apply to Ethernet bridges.</p>
+    <p>nftables <code>nft add rule ip filter output ip daddr 1.2.3.4 drop</code></p>
+    <p>iptables <code>iptables -A OUTPUT -d 1.2.3.4 -j DROP</code></p>
+    
+    <br><p><i>iptables</i> only applies to IPv4, whereas <i>ip6tables</i> will apply to IPv6, <i>arptables</i> will apply to ARP and <i>ebtables</i> will apply to Ethernet bridges.</p>
     <p>In most Linux systems, iptables is insalled to <i>/usr/sbin/iptables</i>, but a symbolic link is usually found at <i>/sbin/iptables</i>.</p>
     
     <br><p>Sources:</p>
