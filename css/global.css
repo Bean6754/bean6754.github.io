@@ -3,6 +3,10 @@ body {
 	font-family: monospace !important;
 }
 
+a:visited {
+	color: #0000ff;
+}
+
 p {
 	color: #fff;
 	font-family: monospace;
