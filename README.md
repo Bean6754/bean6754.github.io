@@ -10,6 +10,6 @@ My new focus is minimalism.
 3. To use as little amount of images and videos as possible.
 
 4. To keep it:
-  * Clean.
-  * Simple.
-  * Easy.
+    * Clean.
+    * Simple.
+    * Easy.
