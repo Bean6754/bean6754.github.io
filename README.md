@@ -13,3 +13,11 @@ My new focus is minimalism.
     * Clean.
     * Simple.
     * Easy.
+
+5. To try and use HTML tags instead of bloating styles using CSS.
+
+## For example:
+
+Underline: Instead of `text-decoration: underline;` (CSS) use `<u></u>` tags (HTML).
+
+Bold: Instead of `font-weight: 700;` (CSS) use `<b></b>` tags (HTML).
