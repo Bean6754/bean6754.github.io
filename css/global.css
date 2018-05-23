@@ -4,11 +4,11 @@ body {
 }
 
 a {
-	color: #0000aa;
+	color: #0000ff;
 }
 
 a:visited {
-	color: #0000aa;
+	color: #0000ff;
 }
 
 p {
@@ -21,5 +21,5 @@ pre {
 }
 
 code {
-	color: #00aa00;
+	color: #00ff00;
 }
