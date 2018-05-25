@@ -33,6 +33,7 @@
     <p>In most Linux systems, iptables is insalled to <i>/usr/sbin/iptables</i>, but a symbolic link is usually found at <i>/sbin/iptables</i>.</p>
     
     <p><u>Table</u></p>
+    <p>NOTE: Some of the Windows firewall commands are PowerShell commands. So run all of your Windows commands through PowerShell instead of CMD.</p>
     <table>
       <thead>
         <tr>
@@ -57,6 +58,11 @@
           <td>List firewall rules.</td>
           <td>netsh advfirewall show allprofiles</td>
           <td>iptables -L</td>
+        </tr>
+        <tr>
+          <td>Delete all firewall rules.</td>
+          <td>Remove-NetFirewallRule</td>
+          <td>iptables -F</td>
         </tr>
       </tbody>
     </table>
