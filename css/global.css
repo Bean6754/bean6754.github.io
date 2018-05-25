@@ -3,6 +3,10 @@ body {
 	font-family: monospace !important;
 }
 
+b {
+	color: #ffff00;
+}
+
 i {
 	color: #ff00ff;
 }
