@@ -91,9 +91,14 @@
           <td>N/A</td>
         </tr>
         <tr>
-          <td><b>Enable firewall logging.</b></td>
+          <td><b>Enable firewall logging to specifc file.</b></td>
           <td>netsh advfirewall set currentprofile logging filename "C:\temp\pfirewall.log"</td>
-          <td>iptables -A INPUT -j LOGGING  (stored in '/var/log/messages')</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td><b>Enable firewall logging.</b></td>
+          <td>netsh advfirewall set allprofile logging droppedconnections enable<br>netsh advfirewall set allprofile logging allowedconnections enable<br>(stored in '%SystemRoot%\system32\logfiles\firewall\pfirewall.log' by default)</td>
+          <td>iptables -A INPUT -j LOGGING<br>(stored in '/var/log/messages')</td>
         </tr>
         
         <tr>
@@ -143,6 +148,7 @@
     <p>Windows</p>
     <a href="http://techgenix.com/quicklyturnonoffwindowsfirewallusingcommandline/">TechGenix</a>
     <a href="http://www.itprotoday.com/windows-8/top-10-windows-firewall-netsh-commands">IT Pro Today</a>
+    <a href="http://www.itprotoday.com/management-mobility/q-how-can-i-generate-windows-firewall-packet-log-shows-all-incoming-network">IT Pro Today</a>
     <a href="https://searchenterprisedesktop.techtarget.com/photostory/4500257332/Top-Windows-command-line-commands/6/Check-Windows-Firewall-status-with-netsh-advfirewall-show-allprofiles">TechTarget</a>
     <a href="https://www.howtogeek.com/howto/windows-vista/allow-pings-icmp-echo-request-through-your-windows-vista-firewall/">How-To Geek</a>
     <a href="https://www.iana.org/assignments/icmpv6-parameters/icmpv6-parameters.xhtml#icmpv6-parameters-codes-6">Internet Assigned Numbers Authority (IANA)</a>
