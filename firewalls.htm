@@ -34,6 +34,7 @@
     
     <p><u>Table</u></p>
     <p>NOTE: Some of the Windows firewall commands are PowerShell commands. So run all of your Windows commands through PowerShell instead of CMD.</p>
+    <p>NOTE: I add 'A: ' to the beginning of custom rules, so that they are grouped together and easy to locate.</p>
     <table>
       <thead>
         <tr>
@@ -89,6 +90,8 @@
           <td>netsh -r &lt;ComputerName&gt; advfirewall set publicprofile state on</td>
           <td>N/A</td>
         </tr>
+        
+        
         <tr>
           <td><b>Disable ICMPv4 echo requests.</b></td>
           <td>netsh advfirewall firewall add rule name="A: ICMP Block incoming V4 echo request" protocol=icmpv4:8,any dir=in action=block</td>
@@ -126,7 +129,7 @@
         </tr>
         <tr>
           <td><b>Enable all of ICMPv6.</b></td>
-          <td>netsh advfirewall firewall add rule name="A: ICMP Allow incoming V6 all" protocol=icmpv6,any dir=in action=block</td>
+          <td>netsh advfirewall firewall add rule name="A: ICMP Allow incoming V6 all" protocol=icmpv6,any dir=in action=allow</td>
           <td>iptables -t mangle -A PREROUTING -p icmp6 -j ACCEPT</td>
         </tr>
       </tbody>
