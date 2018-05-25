@@ -61,13 +61,28 @@
         </tr>
         <tr>
           <td>Delete all firewall rules.</td>
-          <td>Remove-NetFirewallRule</td>
+          <td>netsh advfirewall reset/Remove-NetFirewallRule</td>
           <td>iptables -F</td>
         </tr>
         <tr>
           <td>Delete firewall profiles/chains.</td>
           <td>N/A</td>
           <td>iptables -X</td>
+        </tr>
+        <tr>
+          <td>Select firewall profile.</td>
+          <td>Set-NetFirewallProfile -Name &lt;ProfileName&gt;</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>Turn firewall off for remote computer.</td>
+          <td>netsh -r &lt;ComputerName&gt; advfirewall set publicprofile state off</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>Turn firewall on for remote computer.</td>
+          <td>netsh -r &lt;ComputerName&gt; advfirewall set publicprofile state on</td>
+          <td>N/A</td>
         </tr>
       </tbody>
     </table>
