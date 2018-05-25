@@ -90,7 +90,11 @@
           <td>netsh -r &lt;ComputerName&gt; advfirewall set publicprofile state on</td>
           <td>N/A</td>
         </tr>
-        
+        <tr>
+          <td><b>Enable firewall logging.</b></td>
+          <td>netsh advfirewall set currentprofile logging filename "C:\temp\pfirewall.log"</td>
+          <td>iptables -A INPUT -j LOGGING  (stored in '/var/log/messages')</td>
+        </tr>
         
         <tr>
           <td><b>Disable ICMPv4 echo requests.</b></td>
@@ -146,5 +150,6 @@
     <a href="https://en.wikipedia.org/wiki/Nftables">Wikipedia</a>
     <a href="https://netfilter.org/projects/nftables/">Netfilter.org</a>
     <a href="http://raynux.com/blog/2009/04/15/iptables-quick-command-list/">Rayhan's blog</a>
+    <a href="https://www.thegeekstuff.com/2012/08/iptables-log-packets/">The Geek Stuff</a>
   </body>
 </html>
