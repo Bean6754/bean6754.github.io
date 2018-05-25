@@ -34,27 +34,31 @@
     
     <p><u>Table</u></p>
     <table>
-      <tr>
-        <th>Description</th>
-        <th>Windows</th>
-        <th>Linux</th>
-      </tr>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Windows</th>
+          <th>Linux</th>
+        </tr>
+      </thead>
       
-      <tr>
-        <td>Turn firewall off.</td>
-        <td>netsh advfirewall set allprofiles state off</td>
-        <td>systemctl stop iptables</td>
-      </tr>
-      <tr>
-        <td>Turn firewall on.</td>
-        <td>netsh advfirewall set allprofiles state on</td>
-        <td>systemctl start iptables</td>
-      </tr>
-      <tr>
-        <td>List firewall rules.</td>
-        <td>netsh advfirewall show allprofiles</td>
-        <td>iptables -L</td>
-      </tr>
+      <tbody>
+        <tr>
+          <td>Turn firewall off.</td>
+          <td>netsh advfirewall set allprofiles state off</td>
+          <td>systemctl stop iptables</td>
+        </tr>
+        <tr>
+          <td>Turn firewall on.</td>
+          <td>netsh advfirewall set allprofiles state on</td>
+          <td>systemctl start iptables</td>
+        </tr>
+        <tr>
+          <td>List firewall rules.</td>
+          <td>netsh advfirewall show allprofiles</td>
+          <td>iptables -L</td>
+        </tr>
+      </tbody>
     </table>
     
     <br><p>Sources:</p>
