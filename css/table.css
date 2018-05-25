@@ -1,14 +1,9 @@
 table {
-  border: 1px solid #fff;
   border-collapse: collapse;
   color: #0ff;
 }
 
-th {
-  border: 1px solid #fff;
-}
-
 td {
-  border: 1px solid #666;
+  border: 1px solid #f00;
   padding: 6px;
 }
