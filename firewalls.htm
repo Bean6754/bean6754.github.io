@@ -55,8 +55,13 @@
           <td>systemctl start iptables</td>
         </tr>
         <tr>
-          <td><b>List firewall rules.</b></td>
+          <td><b>List firewall profiles.</b></td>
           <td>netsh advfirewall show allprofiles</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td><b>List firewall rules.</b></td>
+          <td>netsh advfirewall firewall show rule name=all</td>
           <td>iptables -L</td>
         </tr>
         <tr>
