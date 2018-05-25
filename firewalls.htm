@@ -89,6 +89,46 @@
           <td>netsh -r &lt;ComputerName&gt; advfirewall set publicprofile state on</td>
           <td>N/A</td>
         </tr>
+        <tr>
+          <td><b>Disable ICMPv4 echo requests.</b></td>
+          <td>netsh advfirewall firewall add rule name="A: ICMP Block incoming V4 echo request" protocol=icmpv4:8,any dir=in action=block</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td><b>Enable ICMPv4 echo requests.</b></td>
+          <td>netsh advfirewall firewall add rule name="A: ICMP Allow incoming V4 echo request" protocol=icmpv4:8,any dir=in action=allow</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td><b>Disable all of ICMPv4.</b></td>
+          <td>netsh advfirewall firewall add rule name="A: ICMP Block incoming V4 all" protocol=icmpv4,any dir=in action=block</td>
+          <td>iptables -t mangle -A PREROUTING -p icmp -j DROP</td>
+        </tr>
+        <tr>
+          <td><b>Enable all of ICMPv4.</b></td>
+          <td>netsh advfirewall firewall add rule name="A: ICMP Allow incoming V4 all" protocol=icmpv4,any dir=in action=allow</td>
+          <td>iptables -t mangle -A PREROUTING -p icmp -j ACCEPT</td>
+        </tr>
+        <tr>
+          <td><b>Disable ICMPv6 echo requests.</b></td>
+          <td>netsh advfirewall firewall add rule name="A: ICMP Block incoming V6 echo request" protocol=icmpv6:128,any dir=in action=block</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td><b>Enable ICMPv6 echo requests.</b></td>
+          <td>netsh advfirewall firewall add rule name="A: ICMP Allow incoming V6 echo request" protocol=icmpv6:128,any dir=in action=allow</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td><b>Disable all of ICMPv6.</b></td>
+          <td>netsh advfirewall firewall add rule name="A: ICMP Block incoming V6 all" protocol=icmpv6,any dir=in action=block</td>
+          <td>iptables -t mangle -A PREROUTING -p icmp6 -j DROP</td>
+        </tr>
+        <tr>
+          <td><b>Enable all of ICMPv6.</b></td>
+          <td>netsh advfirewall firewall add rule name="A: ICMP Allow incoming V6 all" protocol=icmpv6,any dir=in action=block</td>
+          <td>iptables -t mangle -A PREROUTING -p icmp6 -j ACCEPT</td>
+        </tr>
       </tbody>
     </table>
     
@@ -97,6 +137,8 @@
     <a href="http://techgenix.com/quicklyturnonoffwindowsfirewallusingcommandline/">TechGenix</a>
     <a href="http://www.itprotoday.com/windows-8/top-10-windows-firewall-netsh-commands">IT Pro Today</a>
     <a href="https://searchenterprisedesktop.techtarget.com/photostory/4500257332/Top-Windows-command-line-commands/6/Check-Windows-Firewall-status-with-netsh-advfirewall-show-allprofiles">TechTarget</a>
+    <a href="https://www.howtogeek.com/howto/windows-vista/allow-pings-icmp-echo-request-through-your-windows-vista-firewall/">How-To Geek</a>
+    <a href="https://www.iana.org/assignments/icmpv6-parameters/icmpv6-parameters.xhtml#icmpv6-parameters-codes-6">Internet Assigned Numbers Authority (IANA)</a>
     <p>Linux</p>
     <a href="https://en.wikipedia.org/wiki/Nftables">Wikipedia</a>
     <a href="https://netfilter.org/projects/nftables/">Netfilter.org</a>
