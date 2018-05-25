@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Welcome!</title>
     <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/table.css">
   </head>
   <body>
     <a href="index.htm">Home</a>
@@ -30,6 +31,30 @@
     <br><p><i>iptables</i> only applies to IPv4, whereas <i>ip6tables</i> will apply to IPv6, <i>arptables</i> will apply to ARP and <i>ebtables</i> will apply to Ethernet bridges.</p>
     <p>In most Linux systems, iptables is insalled to <i>/usr/sbin/iptables</i>, but a symbolic link is usually found at <i>/sbin/iptables</i>.</p>
     
+    <table>
+      <tr>
+        <th>Description</th>
+        <th>Windows</th>
+        <th>Linux</th>
+      </tr>
+      
+      <tr>
+        <td>Turn firewall off.</td>
+        <td>netsh advfirewall set allprofiles state off</td>
+        <td>systemctl stop iptables</td>
+      </tr>
+      <tr>
+        <td>Turn firewall on.</td>
+        <td>netsh advfirewall set allprofiles state on</td>
+        <td>systemctl start iptables</td>
+      </tr>
+      <tr>
+        <td>List firewall rules.</td>
+        <td>netsh advfirewall show allprofiles</td>
+        <td>iptables -L</td>
+      </tr>
+    </table>
+    
     <br><p>Sources:</p>
     <p>Windows</p>
     <a href="http://techgenix.com/quicklyturnonoffwindowsfirewallusingcommandline/">TechGenix</a>
@@ -37,5 +62,6 @@
     <p>Linux</p>
     <a href="https://en.wikipedia.org/wiki/Nftables">Wikipedia</a>
     <a href="https://netfilter.org/projects/nftables/">Netfilter.org</a>
+    <a href="http://raynux.com/blog/2009/04/15/iptables-quick-command-list/">Rayhan's blog</a>
   </body>
 </html>
