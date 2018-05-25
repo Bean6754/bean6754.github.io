@@ -45,42 +45,42 @@
       
       <tbody>
         <tr>
-          <td>Turn firewall off.</td>
+          <td><b>Turn firewall off.</b></td>
           <td>netsh advfirewall set allprofiles state off</td>
           <td>systemctl stop iptables</td>
         </tr>
         <tr>
-          <td>Turn firewall on.</td>
+          <td><b>Turn firewall on.</b></td>
           <td>netsh advfirewall set allprofiles state on</td>
           <td>systemctl start iptables</td>
         </tr>
         <tr>
-          <td>List firewall rules.</td>
+          <td><b>List firewall rules.</b></td>
           <td>netsh advfirewall show allprofiles</td>
           <td>iptables -L</td>
         </tr>
         <tr>
-          <td>Delete all firewall rules.</td>
+          <td><b>Delete all firewall rules.</b></td>
           <td>netsh advfirewall reset/Remove-NetFirewallRule</td>
           <td>iptables -F</td>
         </tr>
         <tr>
-          <td>Delete firewall profiles/chains.</td>
+          <td><b>Delete firewall profiles/chains.</b></td>
           <td>N/A</td>
           <td>iptables -X</td>
         </tr>
         <tr>
-          <td>Select firewall profile.</td>
+          <td><b>Select firewall profile.</b></td>
           <td>Set-NetFirewallProfile -Name &lt;ProfileName&gt;</td>
           <td>N/A</td>
         </tr>
         <tr>
-          <td>Turn firewall off for remote computer.</td>
+          <td><b>Turn firewall off for remote computer.</b></td>
           <td>netsh -r &lt;ComputerName&gt; advfirewall set publicprofile state off</td>
           <td>N/A</td>
         </tr>
         <tr>
-          <td>Turn firewall on for remote computer.</td>
+          <td><b>Turn firewall on for remote computer.</b></td>
           <td>netsh -r &lt;ComputerName&gt; advfirewall set publicprofile state on</td>
           <td>N/A</td>
         </tr>
