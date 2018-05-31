@@ -1,0 +1,29 @@
+#orbdiv {
+	top: 0;
+	width: 200px;
+	height: 400px;
+	background: #333;
+}
+
+#orbdiv a {
+	color: #0000cc;
+	font-family: Arial;
+	text-decoration: none;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#orbdiv-contents a {
+	color: #0000cc;
+	font-family: Arial;
+	text-decoration: none;
+	position: absolute;
+	bottom: 24px;
+	left: 0;
+	padding-bottom: 24px;
+}
+
+#orbdiv a:hover {
+	color: #0000FF;
+}
