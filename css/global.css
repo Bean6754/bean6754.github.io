@@ -1,36 +1,72 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-	background-color: #000;
-	font-family: monospace !important;
+	background-color: #f0f0f0;
 }
 
-b {
-	color: #ffff00;
+#header {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 26px;
+	text-align: center;
+	text-decoration: underline;
 }
 
-i {
-	color: #ff00ff;
+#navbar ul {
+	display: inline;
+	list-style-type: none;
+	padding: 12px;
+	width: 60px;
 }
 
-u {
-	color: #ff0000;
+#navbar li {
+	/* For some reason I need this on both `ul` and `li`. */
+	display: inline;
 }
 
-a {
-	color: #0000ff;
+#navbar li a {
+	background-color: #ccc;
+	color: #2a7efc;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+
+	padding: 8px;
 }
 
-a:visited {
-	color: #0000ff;
+#navbar li a:hover {
+	background-color: #bbb;
+	color: #216bff;
+}
+
+#footer-banner {
+	background-color: #f4cb42;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: underline;
+
+	padding: 6px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	margin: 0px;
+}
+
+#footer-banner button {
+	font-size: 18px;
+	border: none;
+}
+
+#footer-banner button:hover {
+	background-color: #eee;
+	color: #222;
 }
 
 p {
-	color: #fff;
-}
-
-pre {
-	color: #fff;
-}
-
-code {
-	color: #00ff00;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	margin-left: 4px;
 }
