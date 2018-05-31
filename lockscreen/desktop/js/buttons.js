@@ -7,7 +7,7 @@ if (active == 0) {
 	div.innerHTML += '<link href="css/orb.css" rel="stylesheet" type="text/css">\
 	<div id="orbdiv-contents">\
 		<button onClick="">User</button><br>\
-		<a href="../../index.htm">Sign out</a><br>\
+		<a href="../index.htm">Sign out</a><br>\
 		<a href="https://github.com/bean6754">About Me</a>\
 	</div>\
 	';
