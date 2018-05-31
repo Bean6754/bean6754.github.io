@@ -7,9 +7,13 @@
     <link rel="stylesheet" type="text/css" href="css/table.css">
   </head>
   <body>
-    <a href="index.htm">Home</a>
-    <p><u>Windows</u></p>
-    <p><u>netsh</u></p>
+    <div id="navbar">
+      <ul>
+        <li><a href="index.htm">Home</a></li>
+      </ul>
+    </div>
+    <h2>Windows</h2>
+    <h3>netsh</h3>
     <p>'netsh' is the network shell of Windows. It is used to control the firewall, log network activity, reset the Windows networking stack and more.</p>
     <p>Using the command line:</p>
     <p>Turn the firewall off: <code>netsh advfirewall set allprofiles state off</code></p>
@@ -18,8 +22,8 @@
     <p>Reset Windows Firewall to default settings: <code>netsh advfirewall reset</code></p>
     
     
-    <br><p><u>Linux</u></p>
-    <p><u>iptables and nftables</u></p>
+    <h2>Linux</h2>
+    <h3>iptables and nftables</h3>
     <p>nftables is a userspace firewall that was created for the Linux networking stack.</p>
     <p>It is very different from iptables because it it supposed to replace certain parts of netfilter.</p>
     <p>I.E: nftables replaces the popular {ip,ip6,arp,eb}tables.</p>
@@ -144,7 +148,7 @@
       </tbody>
     </table>
     
-    <br><p>Sources:</p>
+    <br><h2>Sources:</h2>
     <p>Windows</p>
     <a href="http://techgenix.com/quicklyturnonoffwindowsfirewallusingcommandline/">TechGenix</a>
     <a href="http://www.itprotoday.com/windows-8/top-10-windows-firewall-netsh-commands">IT Pro Today</a>
