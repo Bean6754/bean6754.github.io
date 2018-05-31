@@ -34,7 +34,7 @@ body {
 	color: #216bff;
 }
 
-#footer-banner {
+#header-banner {
 	background-color: #f4cb42;
 	font-family: Verdana, Arial, sans-serif;
 	font-size: 16px;
@@ -43,13 +43,12 @@ body {
 
 	padding: 6px;
 	position: fixed;
-	bottom: 0;
+	top: 0;
 	width: 100%;
-	margin: 0px;
 	z-index: 5;
 }
 
-#footer-banner button {
+#header-banner button {
 	font-size: 18px;
 	border: none;
 }
