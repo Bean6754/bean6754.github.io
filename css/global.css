@@ -20,8 +20,8 @@ body {
 }
 
 #navbar li a {
-	background-color: #ccc;
-	color: #2a7efc;
+	background-color: #CCC;
+	color: #2A7EFC;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	text-decoration: none;
@@ -31,7 +31,7 @@ body {
 
 #navbar li a:hover {
 	background-color: #bbb;
-	color: #216bff;
+	color: #216BFF;
 }
 
 #header-banner {
@@ -58,7 +58,7 @@ body {
 }
 
 h1 {
-	color: #ccc;
+	color: #CCC;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 38px;
 	text-align: center;
@@ -66,7 +66,7 @@ h1 {
 }
 
 h2 {
-	color: #ccc;
+	color: #CCC;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 30px;
 	text-align: left;
@@ -74,18 +74,18 @@ h2 {
 }
 
 p {
-	color: #ccc;
+	color: #CCC;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	margin-left: 4px;
 }
 
 code {
-	color: #007700;
+	color: #00CC00;
 	font-family: monospace;
 	font-size: 16px;
 }
 
 pre {
-	color: #ccc;
+	color: #CCC;
 }
