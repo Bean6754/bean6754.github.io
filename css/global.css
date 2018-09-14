@@ -1,0 +1,9 @@
+a {
+  color: #0000FF;
+  font-family: "Comic Sans MS";
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0000FF;
+}
