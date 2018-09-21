@@ -2,14 +2,24 @@ body {
   background-color: #222;
 }
 
+h1 {
+  color: #AAA;
+  font-family: "Comic Sans MS";
+  font-size: 2em;
+  text-align: center;
+  text-decoration: underline;
+}
+
 a {
-  color: #0000FF;
+  color: #0066FF;
   font-family: "Comic Sans MS";
   text-decoration: none;
 }
 
 a:hover {
-  background-color: #FFFF00;
-  color: #0000FF;
   text-decoration: underline;
+}
+
+a:visited {
+  color: #0066FF;
 }
