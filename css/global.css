@@ -23,3 +23,8 @@ a:hover {
 a:visited {
   color: #0066FF;
 }
+
+p {
+  color: #CCC;
+  font-family: monospace, consolas;
+}
