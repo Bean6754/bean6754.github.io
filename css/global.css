@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  color: #CCC;
+  color: #C00;
   font-family: monospace, consolas;
   font-size: 2em;
   text-align: center;
@@ -11,7 +11,7 @@ h1 {
 }
 
 a {
-  color: #0066FF;
+  color: #0CC;
   font-family: monospace, consolas;
   text-decoration: none;
 }
@@ -21,20 +21,20 @@ a:hover {
 }
 
 a:visited {
-  color: #0066FF;
+  color: #0CC;
 }
 
 code {
-  color: #66FF00;
+  color: #0C0;
   font-family: monospace, consolas;
 }
 
 p {
-  color: #CCC;
+  color: #C00;
   font-family: monospace, consolas;
 }
 
 pre {
-  color: #CCC;
+  color: #CC0;
   font-family: monospace, consolas;
 }
