@@ -24,7 +24,17 @@ a:visited {
   color: #0066FF;
 }
 
+code {
+  color: #66FF00;
+  font-family: monospace, consolas;
+}
+
 p {
+  color: #CCC;
+  font-family: monospace, consolas;
+}
+
+pre {
   color: #CCC;
   font-family: monospace, consolas;
 }
