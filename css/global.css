@@ -7,9 +7,6 @@ html, body, a:hover  img:hover {
 
 body {
   background-color: #F8E8A6;
-  background-image: url('../img/background.png');
-  background-size: 40%;
-  background-repeat: repeat;
 }
 
 h1 {
