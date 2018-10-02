@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title>Video</title>
 </head>
@@ -13,18 +14,25 @@
 	
 	<div id="iframeDiv"></div>
 	
+	<button onClick="iframeFunction()">Start</button>
+	
 	<script>
-		var i = 1;
-		var div = document.getElementById('iframeDiv');
+		function iframeFunction() {
+			var i = 1;
+			var div = document.getElementById('iframeDiv');
 
-		for (;;) { div.innerHTML += '<iframe src="iframe.htm"></iframe>';
-		/* for (;;) { $('#iframeDiv').append('<iframe src="index.htm></iframe>"'); } - jQuery */
-		i++;
-		console.log(i + " iframes."); }
+			for (;;)
+			{
+				div.innerHTML += '<iframe src="iframecomplete.htm"></iframe>';
+				/* for (;;) { $('#iframeDiv').append('<iframe src="index.htm></iframe>"'); } - jQuery */
+				i++;
+				console.log(i + " iframes.");
+			}
+		}
 	</script>
 	
 	<noscript>
-		<iframe src="iframe.htm"></iframe>
+		<iframe src="iframecomplete.htm"></iframe>
 	</noscript>
 </body>
 </html>
