@@ -18,17 +18,18 @@ h1 {
 }
 
 a {
-  color: #0CC;
+  color: #2A7EFC;
   font-family: monospace, consolas;
   text-decoration: none;
 }
 
 a:hover {
+  color: #216BFF;
   text-decoration: underline;
 }
 
 a:visited {
-  color: #0CC;
+  color: #2A7EFC;
 }
 
 code {
@@ -42,6 +43,6 @@ p {
 }
 
 pre {
-  color: #CC0;
+  color: #F4CB42;
   font-family: monospace, consolas;
 }
