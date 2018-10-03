@@ -1,8 +1,8 @@
 html, body, a {
-        cursor:url('../cur/pointer.png'), auto !important;
+        cursor: url('../cur/pointer.png'), auto !important;
 }
 html, body, a:hover  img:hover {
-        cursor:url('../cur/default.png'), auto !important;
+        cursor: url('../cur/default.png'), auto !important;
 }
 
 body {
