@@ -51,3 +51,7 @@ pre {
   color: #C00;
   font-family: monospace, consolas;
 }
+
+#container {
+  background-color: #FFF;
+}
