@@ -4,7 +4,7 @@ function addcontents() {
     if (active == 0) {
 	var div = document.getElementById('login2');
 	div.innerHTML += '<link href="css/addedcontents.css" rel="stylesheet" type="text/css">\
-		<form action="pages/desktop/index.htm">\
+		<form action="pages/desktop/desktop.htm">\
 			<input id="formpassword" type="text" name="password" value="Enter Password" onfocus="if(this.value==\'Enter Password\') this.value=\'\';">\
 			<button id="loginButton">Login</button>\
 		</form>\
