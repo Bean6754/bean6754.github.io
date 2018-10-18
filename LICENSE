@@ -1,4 +1,4 @@
-BSD 2-Clause License
+Bean/Matthew Dean 4-Clause License
 
 Copyright (c) 2018, Matthew
 All rights reserved.
@@ -12,6 +12,11 @@ modification, are permitted provided that the following conditions are met:
 * Redistributions in binary form must reproduce the above copyright notice,
   this list of conditions and the following disclaimer in the documentation
   and/or other materials provided with the distribution.
+
+* Redistributions must include all binaries source code.
+
+* Changes to the source code must be clearly documented, this includes
+  additions or deletions.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
