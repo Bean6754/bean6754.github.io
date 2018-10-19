@@ -10,14 +10,14 @@ body {
 }
 
 h1 {
-  font-family: Palatino, Times;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
   font-size: 2em;
   text-align: center;
   text-decoration: underline;
 }
 
 h2 {
-  font-family: Palatino, Times;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
   font-size: 1.5em;
   text-align: left;
   text-decoration: underline;
@@ -25,7 +25,7 @@ h2 {
 
 a {
   color: #2A7EFC;
-  font-family: Palatino, Times;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
@@ -44,7 +44,7 @@ code {
 }
 
 p {
-  font-family: Palatino, Times;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
 }
 
 pre {
