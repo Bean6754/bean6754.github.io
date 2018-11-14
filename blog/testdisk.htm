@@ -10,34 +10,12 @@
   <body>
     <h1>TestDisk</h1>
     
-    <div id="org"></div>
+    <h2>Hard-disk recovery.</h2>
     
-    <script>
-    var orgCode = 
-    `#+STARTUP: showeverything
-    
-    * Hard-disk recovery.
-    
-    ** Mount-points.
-    *** Internal HDD.
-    /dev/sda = /
-    *** External (broken) HDD.
-    /dev/sdb1 = TestDisk used (unmounted)
-    
-    `;
-    var orgParser = new Org.Parser();
-    var orgDocument = orgParser.parse(orgCode);
-    var orgHTMLDocument = orgDocument.convert(Org.ConverterHTML, {
-      headerOffset: 1,
-      exportFromLineNumber: false,
-      suppressSubScriptHandling: false,
-      suppressAutoLink: false
-    });
-
-    console.dir(orgHTMLDocument); // => { title, contentHTML, tocHTML, toc }
-    console.log(orgHTMLDocument.toString()) // => Rendered HTML
-    
-    document.getElementById('org').innerHTML = orgHTMLDocument.toString();
-    </script>
+    <h3>Mount-points.</h3>
+    <p><u>Internal HDD.</u></p>
+    <p>/dev/sda = /</p>
+    <p><u>External (broken) HDD.</u></p>
+    <p>/dev/sdb1 = TestDisk used (unmounted)</p>
   </body>
 </html>
