@@ -37,7 +37,7 @@
     console.dir(orgHTMLDocument); // => { title, contentHTML, tocHTML, toc }
     console.log(orgHTMLDocument.toString()) // => Rendered HTML
     
-    document.getElementById('org').innerHTML = orgHTMLDocument;
+    document.getElementById('org').innerHTML = orgHTMLDocument.toString();
     </script>
   </body>
 </html>
