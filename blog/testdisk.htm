@@ -34,6 +34,10 @@
 
     console.dir(orgHTMLDocument); // => { title, contentHTML, tocHTML, toc }
     console.log(orgHTMLDocument.toString()) // => Rendered HTML
+    
+    document.getElementById('tag-id').innerHTML = orgHTMLDocument;
     </script>
+    
+    <div id="org"></div>
   </body>
 </html>
