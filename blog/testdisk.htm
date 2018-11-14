@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8">
+    <title>Batch2PowerShell</title>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/table.css">
+    <script src="../js/org.js"></script>
+  </head>
+  <body>
+    <h1>TestDisk</h1>
+    
+    <script>
+    var orgCode = 
+    `#+STARTUP: showeverything
+    
+    * Hard-disk recovery.
+    
+    ** Mount-points.
+    *** Internal HDD.
+    /dev/sda = /
+    *** External (broken) HDD.
+    /dev/sdb1 = TestDisk used (unmounted)
+    
+    `;
+    var orgParser = new Org.Parser();
+    var orgDocument = orgParser.parse(orgCode);
+    var orgHTMLDocument = orgDocument.convert(Org.ConverterHTML, {
+      headerOffset: 1,
+      exportFromLineNumber: false,
+      suppressSubScriptHandling: false,
+      suppressAutoLink: false
+    });
+
+    console.dir(orgHTMLDocument); // => { title, contentHTML, tocHTML, toc }
+    console.log(orgHTMLDocument.toString()) // => Rendered HTML
+    </script>
+  </body>
+</html>
