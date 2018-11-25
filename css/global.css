@@ -5,19 +5,15 @@ html, body, a:hover  img:hover {
         cursor: url('../cur/default.png'), auto !important;
 }
 
-body {
-  background-color: #F8E8A6;
-}
-
 h1 {
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: Ubuntu, Tahoma, sans-serif
   font-size: 2em;
   text-align: center;
   text-decoration: underline;
 }
 
 h2 {
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: Ubuntu, Tahoma, sans-serif
   font-size: 1.5em;
   text-align: left;
   text-decoration: underline;
@@ -25,7 +21,7 @@ h2 {
 
 a {
   color: #2A7EFC;
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: Ubuntu, Tahoma, sans-serif
   text-decoration: none;
 }
 
@@ -44,7 +40,7 @@ code {
 }
 
 p {
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: Ubuntu, Tahoma, sans-serif
 }
 
 pre {
