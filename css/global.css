@@ -5,6 +5,10 @@ html, body, a:hover  img:hover {
         cursor: url('../cur/default.png'), auto !important;
 }
 
+body {
+        background-color: #FFF;
+}
+
 h1 {
   font-family: Ubuntu, Tahoma, sans-serif
   font-size: 2em;
