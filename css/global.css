@@ -15,9 +15,21 @@ a {
 
 h1, h2, h3, p {
         color: #474747;
+        font-family: sans-serif;
         text-align: center;
 }
 
 .navbar {
         background-color: #474747;
+        border-radius: 5px;
+        padding: 6px;
+}
+
+.navbar ul {
+        list-style-type: none;
+        display: inline-block;
+}
+
+.navbar li {
+        font-family: sans-serif;
 }
