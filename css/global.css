@@ -20,9 +20,8 @@ h1, h2, h3, p {
 }
 
 .navbar {
-        background-color: #474747;
-        border-radius: 5px;
-        padding: 6px;
+        text-align: center;
+        padding: 2px;
 }
 
 .navbar ul {
@@ -31,5 +30,13 @@ h1, h2, h3, p {
 }
 
 .navbar li {
+
+        display: inline-block;
         font-family: sans-serif;
+}
+
+.navbar a {
+        font-size: 18px;
+        padding: 14px;
+        text-decoration: none;
 }
