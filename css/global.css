@@ -6,55 +6,18 @@ html, body, a:hover  img:hover {
 }
 
 body {
-        background-color: #FFF;
-}
-
-h1 {
-  font-family: Ubuntu, Tahoma, sans-serif;
-  font-size: 2em;
-  text-align: center;
-  text-decoration: underline;
-}
-
-h2 {
-  font-family: Ubuntu, Tahoma, sans-serif;
-  font-size: 1.5em;
-  text-align: left;
-  text-decoration: underline;
+        background-color: #ff80f1;
 }
 
 a {
-  color: #2A7EFC;
-  font-family: Ubuntu, Tahoma, sans-serif;
-  text-decoration: none;
+        color: #b5010f;
 }
 
-a:hover {
-  color: #216BFF;
-  text-decoration: underline;
+h1, h2, h3, p {
+        color: #474747;
+        text-align: center;
 }
 
-a:visited {
-  color: #2A7EFC;
-}
-
-code {
-  color: #0C0;
-  font-family: monospace, consolas;
-}
-
-p {
-  font-family: Ubuntu, Tahoma, sans-serif;
-}
-
-pre {
-  color: #C00;
-  font-family: monospace, consolas;
-}
-
-#container {
-  background-color: #FFF;
-  border-radius: 1%;
-  margin: 1%;
-  padding: 1%;
+.navbar {
+        background-color: #474747;
 }
