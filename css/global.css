@@ -30,7 +30,6 @@ h1, h2, h3, p {
 }
 
 .navbar li {
-
         display: inline-block;
         font-family: sans-serif;
 }
@@ -39,4 +38,8 @@ h1, h2, h3, p {
         font-size: 18px;
         padding: 14px;
         text-decoration: none;
+}
+
+.navbar .current-page {
+        text-decoration: underline;
 }
