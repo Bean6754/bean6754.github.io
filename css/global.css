@@ -9,6 +9,19 @@ body {
         background-color: #fff;
 }
 
+/*  Debugging centre line
+body:after {
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px dotted #ff0000;
+    transform: translate(-50%);
+}
+*/
+
 a {
         color: #b5010f;
 }
@@ -46,6 +59,7 @@ h2 {
 .navbar ul {
         list-style-type: none;
         display: inline-block;
+        padding: 0;
 }
 
 .navbar li {
