@@ -14,11 +14,11 @@
         var activeBool = true;
         
         if (activeBool = false) {
-          document.getElementById('devLine') = '<style>body{background-color:#ccc;}</style>';
+          document.body.style.background = "#ccc";
           var activeBool = true;
         }
         else if (activeBool = true) {
-          document.getElementById('devLine') = '<style>body{background-color:#eee8d5;}</style>';
+          document.body.style.background = "#eee8d5";
           var activeBool = false;
         }
         else {
@@ -26,7 +26,6 @@
         }
     </script>
     <button onClick="devLine()">Button</button>
-    <div id="devLine"></div>
     
     <h1>Home</h1>
     <h2>Welcome to my GitHub Website</h2>
