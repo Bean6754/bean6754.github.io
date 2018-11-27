@@ -7,7 +7,8 @@
     <title>Home - bean6754.github.io</title>
   </head>
   <body>
-    <button onClick="devLine()">Button</button><div id="devLineCss"></div>
+    <button onClick="devLine()">Button</button>
+    <div id="devLine"></div>
     <script>
       var activeBool = new Boolean(false);
       
@@ -15,11 +16,11 @@
         var activeBool = true;
         
         if (activeBool = false) {
-          document.getElementById('devLineCss') = '<style>body{background-color:#ccc;}</style>';
+          document.getElementById('devLine') = '<style>body{background-color:#ccc;}</style>';
           var activeBool = true;
         }
         else if (activeBool = true) {
-          document.getElementById('devLineCss') = '<style>body{background-color:#eee8d5;}</style>';
+          document.getElementById('devLine') = '<style>body{background-color:#eee8d5;}</style>';
           var activeBool = false;
         }
         else {
