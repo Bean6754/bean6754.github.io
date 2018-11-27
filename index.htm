@@ -7,6 +7,26 @@
     <title>Home - bean6754.github.io</title>
   </head>
   <body>
+    <script>
+      var activeBool = new Boolean(false);
+      
+      function devLine() {
+        var activeBool = true;
+        
+        if (activeBool = false) {
+          document.getElementById('devLineCss') = '<style>body{background-color:#ccc;}</style>';
+          var activeBool = true;
+        }
+        else if (activeBool = true) {
+          document.getElementById('devLineCss') = '<style>body{background-color:#eee8d5;}</style>';
+          var activeBool = false;
+        }
+        else {
+          Console.Log("activeBool failure for devLine.\n")
+        }
+    </script>
+    <button onclick="devLine()">--------</button><div id="devLineCss"></div>
+    
     <h1>Home</h1>
     <h2>Welcome to my GitHub Website</h2>
     
