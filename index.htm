@@ -8,18 +8,16 @@
   </head>
   <body>
     <script>
-      var activeBool = new Boolean(false);
+      var activeBool = 0;
       
       function devLine() {
-        var activeBool = true;
-        
-        if (activeBool = false) {
+        if (activeBool = 0) {
           document.body.style.background = "#ccc";
-          var activeBool = true;
+          activeBool = 1;
         }
-        else if (activeBool = true) {
+        else if (activeBool = 1) {
           document.body.style.background = "#eee8d5";
-          var activeBool = false;
+          activeBool = 0;
         }
         else {
           // console.log('activeBool failure for devLine.\n');
