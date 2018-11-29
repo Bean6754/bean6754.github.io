@@ -34,7 +34,7 @@ h1, h2, h3, p {
 }
 
 h1 {
-        font-size: 56px;
+        font-size: 46px;
 }
 
 h2 {
@@ -46,7 +46,7 @@ h2 {
         background-color: rgba(204, 204, 204, 0.5);
         left: 0;
         text-align: center;
-        padding: 0;
+        padding: 1px;
         top: 0;
 }
 
@@ -58,7 +58,7 @@ h2 {
 .navbar li {
         display: inline-block;
         font-family: sans-serif;
-        margin: 7px;
+        margin: 6px;
 }
 
 .navbar a {
