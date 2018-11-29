@@ -7,6 +7,7 @@ html, body, a:hover  img:hover {
 
 body {
         background-color: #eee8d5;
+        margin: 0 !important;
 }
 
 /*  Debugging centre line
@@ -32,22 +33,12 @@ h1, h2, h3, p {
         text-align: center;
 }
 
-.title-group {
-        line-height: 1.4;
-}
-
 h1 {
         font-size: 56px;
-        line-height: 1.2;
-        display: block;
 }
 
 h2 {
         color: #073642;
-        margin-top: 10px!important;
-        margin: 50px 0 0;
-        display: block;
-        line-height: 1.4;
         font-size: 15px;
 }
 
@@ -56,19 +47,16 @@ h2 {
         left: 0;
         text-align: center;
         padding: 2px;
-        position: fixed;
         top: 0;
-        width: 100%;
 }
 
 .navbar ul {
         list-style-type: none;
-        display: inline-block;
         padding: 0;
 }
 
 .navbar li {
-        display: inline-block;
+        displaY: inline-block;
         font-family: sans-serif;
         margin: 7px;
 }
