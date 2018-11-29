@@ -72,3 +72,9 @@ h2 {
         padding-bottom: 5px;
         border-bottom: 2px solid #dc322f;
 }
+
+.footer {
+    background-color: rgba(204, 204, 204, 0.5);
+    height: 100%;
+    padding: 2px;
+}
