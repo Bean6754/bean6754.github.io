@@ -46,8 +46,7 @@ h2 {
         background-color: rgba(204, 204, 204, 0.5);
         left: 0;
         text-align: center;
-        padding: 2px;
-        position: sticky;
+        padding: 0;
         top: 0;
 }
 
@@ -70,12 +69,12 @@ h2 {
 }
 
 .navbar .current-page {
-        padding-bottom: 5px;
+        padding-bottom: 2px;
         border-bottom: 2px solid #dc322f;
 }
 
 .footer {
     background-color: rgba(204, 204, 204, 0.5);
     height: 100%;
-    padding: 2px;
+    padding: 1px;
 }
