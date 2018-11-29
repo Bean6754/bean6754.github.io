@@ -42,6 +42,10 @@ h2 {
         font-size: 15px;
 }
 
+a {
+        font-family: sans-serif;
+}
+
 .navbar {
         background-color: rgba(204, 204, 204, 0.5);
         left: 0;
