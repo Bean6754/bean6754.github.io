@@ -77,5 +77,7 @@ a {
 }
 
 .footer {
+    background-color: rgba(204, 204, 204, 0.5);
     bottom: 0;
+    padding: 1px;
 }
