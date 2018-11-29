@@ -55,7 +55,7 @@ a {
 }
 
 .navbar ul {
-        list-style-image: url('../img/blank-blue-folder.jpg');
+        list-style-type: none;
         padding: 0;
 }
 
