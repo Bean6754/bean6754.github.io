@@ -1,13 +1,6 @@
-html, body, a {
-        cursor: url('../cur/pointer.png'), auto !important;
-}
-html, body, a:hover  img:hover {
-        cursor: url('../cur/default.png'), auto !important;
-}
-
 body {
         background-color: hsl(46, 42%, 90%);
-        margin: 0 !important;
+        margin: 0;
 }
 
 /*  Debugging centre line
