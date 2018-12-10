@@ -6,7 +6,7 @@ html, body, a:hover  img:hover {
 }
 
 body {
-        background-color: #eee8d5;
+        background-color: hsl(46, 42%, 90%);
         margin: 0 !important;
 }
 
@@ -18,28 +18,31 @@ body:after {
     top: 0;
     bottom: 0;
     left: 50%;
-    border-left: 2px dotted #dc322f;
+    border-left: 2px dotted hsl(1, 71%, 52%);
     transform: translate(-50%);
 }*/
 
 
 a {
-        color: #dc322f;
+        color: hsl(1, 71%, 52%);
 }
 
 h1, h2, h3, p {
-        color: #073642;
+        color: hsl(192, 81%, 14%);
         font-family: sans-serif;
         text-align: center;
 }
 
 h1 {
-        font-size: 46px;
+    font-size: 54px;
 }
 
 h2 {
-        color: #073642;
-        font-size: 15px;
+    font-size: 26px;
+}
+
+p {
+    font-size: 18px;
 }
 
 a {
@@ -47,7 +50,7 @@ a {
 }
 
 .navbar {
-        background-color: rgba(204, 204, 204, 0.5);
+        background-color: hsl(46, 42%, 84%);
         left: 0;
         text-align: center;
         padding: 1px;
@@ -73,11 +76,11 @@ a {
 
 .navbar .current-page {
         padding-bottom: 2px;
-        border-bottom: 2px solid #dc322f;
+        border-bottom: 2px solid hsl(1, 71%, 52%);
 }
 
 .footer {
-    background-color: rgba(204, 204, 204, 0.5);
+    background-color: hsl(46, 42%, 84%);
     bottom: 0;
     padding: 1px;
 }
