@@ -19,7 +19,7 @@ a {
         color: #dc312e;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, pre {
         color: #073541;
         font-family: sans-serif;
         text-align: center;
