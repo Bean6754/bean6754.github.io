@@ -71,9 +71,3 @@ a {
         padding-bottom: 0.2em;
         border-bottom: 0.15em solid hsl(1, 71%, 52%);
 }
-
-.footer {
-    background-color: hsl(46, 42%, 84%);
-    bottom: 0;
-    padding: 0.3em;
-}
