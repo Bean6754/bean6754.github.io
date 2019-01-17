@@ -76,25 +76,3 @@ a {
         padding-bottom: 2px;
         border-bottom: 3px solid #dc312e;
 }
-
-.codeBox {
-  background-color: #333;
-  margin: 8px;
-  border: 2px solid #000;
-  text-align: center;
-  counter-reset: my-sec-counter;
-}
-
-.codeBox pre::before {
-  color: #cc0;
-  counter-increment: my-sec-counter;
-  content: counter(my-sec-counter) ". ";
-}
-
-.codeBox pre {
-  color: #0a0;
-  font-family: monospace;
-  font-size: 16px;
-
-  display: inline-block; text-align: left;
-}
