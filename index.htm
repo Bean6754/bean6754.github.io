@@ -15,7 +15,7 @@ function getHTTP() {
     Http.open("GET", url);
     Http.send();
     Http.onreadystatechange=(e)=>{
-      const req = Http.responseText;
+      var req = Http.responseText;
     }
 }
 
