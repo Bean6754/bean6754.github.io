@@ -39,7 +39,29 @@ function getHTTP()
     <div id="codeBox"></div>
   </body>
   <script>
-document.getElementById("jsDiv1").innerHTML = document.location.origin;
+/*
+Protocol + Domain + Page
+
+document.URL
+> "http://example.com/page1.html"
+
+document.location.href
+> "http://example.com/page1.html"
+Protocol + Domain
+
+document.location.origin
+> "http://example.com"
+Domain
+
+document.location.host
+> "example.com"
+Page
+
+document.location.pathname
+> "/page1.html"
+*/
+
+document.getElementById("jsDiv1").innerHTML = document.location.host;
 
 const Http2 = new XMLHttpRequest();
 const url2 = (document.location.origin);
