@@ -81,11 +81,13 @@ a {
   background-color: #333;
   margin: 8px;
   border: 2px solid #000;
+  text-align: center;
 }
 
 .codeBox pre {
   color: #0a0;
   font-family: monospace;
   font-size: 16px;
-  text-align: left;
+
+  display: inline-block; text-align: left;
 }
