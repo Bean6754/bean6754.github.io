@@ -2,7 +2,7 @@ pre {
   background-color: #333;
   margin: 8px;
   border: 2px solid #000;
-  text-align: center;
+  text-align: left;
   counter-reset: line;
 }
 pre span {
