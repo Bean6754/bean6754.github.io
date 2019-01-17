@@ -9,12 +9,16 @@
   </head>
   <body>
     <script>
-const Http = new XMLHttpRequest();
-const url = (document.location.origin);
-Http.open("GET", url);
-Http.send();
-Http.onreadystatechange=(e)=>{
-  const req = Http.responseText;
+function getHTTP()
+{
+  const Http = new XMLHttpRequest();
+  const url = (document.location.origin);
+  Http.open("GET", url);
+  Http.send();
+  Http.onreadystatechange=(e)=>
+  {
+    const req = Http.responseText;
+  }
 }
 </script>
     
@@ -35,6 +39,8 @@ Http.onreadystatechange=(e)=>{
     <div id="codeBox"></div>
   </body>
   <script>
+getHTTP();
+
 document.getElementById("codeBox").innerHTML = req;
 document.getElementById("jsDiv1").innerHTML = document.location.origin;
   </script>
