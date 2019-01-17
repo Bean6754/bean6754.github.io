@@ -47,7 +47,7 @@ Http2.open("GET", url2);
 Http2.send();
 Http2.onreadystatechange=(e)=>
 {
-  document.getElementById("codeBox").innerHTML = "<!-- " + Http2.responseText + " -->";
+  document.getElementById("codeBox").innerHTML = "<!-- " + (+Http2.responseText) + " -->";
 }
   </script>
 </html>
