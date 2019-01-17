@@ -16,7 +16,22 @@
     </div>
     
     <h1>Home</h1>
-    <h2>Welcome to my GitHub Website</h2>
+    <h2>Welcome to <div id="jsDiv1"></div>
+<script>
+function getHTTP() {
+    const Http = new XMLHttpRequest();
+    const url=(document.location.origin);
+    Http.open("GET", url);
+    Http.send();
+    Http.onreadystatechange=(e)=>{
+      var req = Http.responseText;
+    }
+}
+
+getHTTP();
+document.getElementById("jsDiv1") = (url);
+</script>
+</h2>
     
     <p>New website is now hosted on: <a href="http://matthewdean.uk">matthewdean.uk</a></p>
     
