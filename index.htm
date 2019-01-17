@@ -20,6 +20,8 @@ function getHTTP()
     console.log(Http.responseText);
   }
 }
+
+getHTTP();
 </script>
     
     <div class="navbar">
@@ -65,14 +67,6 @@ document.location.pathname
 */
 
 document.getElementById("jsDiv1").innerHTML = document.location.host;
-
-const Http2 = new XMLHttpRequest();
-const url2 = (document.location.origin);
-Http2.open("GET", url2);
-Http2.send();
-Http2.onreadystatechange=(e)=>
-{
-  document.getElementById("codeBox").innerHTML = Http2.responseText;
-}
+// document.getElementById("codeBox").innerHTML = Http2.responseText;
   </script>
 </html>
