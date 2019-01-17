@@ -77,11 +77,15 @@ a {
         border-bottom: 3px solid #dc312e;
 }
 
-.codeBox
-{
+.codeBox {
   background-color: #333;
-  color: #070;
   margin: 8px;
   border: 2px solid #000;
   padding-bottom: 420px;
+}
+
+.codeBox pre {
+  color: #070;
+  font-family: monospace;
+  text-align: left;
 }
