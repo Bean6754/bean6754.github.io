@@ -36,7 +36,7 @@ function getHTTP()
     
     <center><img src="img/Rasp_turn_around.gif" alt="Raspberry Pi Spinning" width="128px" height="128px"></center>
     
-    <div id="codeBox"></div>
+    <code><div id="codeBox"></div></code>
   </body>
   <script>
 /*
@@ -69,7 +69,7 @@ Http2.open("GET", url2);
 Http2.send();
 Http2.onreadystatechange=(e)=>
 {
-  document.getElementById("codeBox").innerHTML = "<code> " + Http2.responseText + " </code>";
+  document.getElementById("codeBox").innerHTML = Http2.responseText;
 }
   </script>
 </html>
