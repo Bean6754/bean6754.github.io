@@ -17,7 +17,7 @@ function getHTTP()
   Http.send();
   Http.onreadystatechange=(e)=>
   {
-    const req = Http.responseText;
+    console.log(Http.responseText);
   }
 }
 </script>
@@ -39,9 +39,15 @@ function getHTTP()
     <div id="codeBox"></div>
   </body>
   <script>
-getHTTP();
-
-document.getElementById("codeBox").innerHTML = req;
 document.getElementById("jsDiv1").innerHTML = document.location.origin;
+
+const Http2 = new XMLHttpRequest();
+const url2 = (document.location.origin);
+Http2.open("GET", url2);
+Http2.send();
+Http2.onreadystatechange=(e)=>
+{
+  document.getElementById("codeBox").innerHTML = Http2.responseText;
+}
   </script>
 </html>
