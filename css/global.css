@@ -86,7 +86,7 @@ a {
 }
 
 .codeBox pre::before {
-  color: #CC0;
+  color: #cc0;
   counter-increment: my-sec-counter;
   content: counter(my-sec-counter) ". ";
 }
