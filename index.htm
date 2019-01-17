@@ -11,7 +11,7 @@
     <script>
 function getHTTP() {
     const Http = new XMLHttpRequest();
-    const url=(document.location.origin);
+    const url = (document.location.origin);
     Http.open("GET", url);
     Http.send();
     Http.onreadystatechange=(e)=>{
@@ -39,7 +39,7 @@ getHTTP();
     <div id="codeBox"></div>
   </body>
   <script>
-document.getElementById("codeBox") += req;
+document.getElementById("codeBox") = req;
 document.getElementById("jsDiv1") = document.location.origin;
   </script>
 </html>
