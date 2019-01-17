@@ -1,18 +1,18 @@
-pre {
+code {
   background-color: #333;
   margin: 8px;
   border: 2px solid #000;
   text-align: left;
   counter-reset: line;
 }
-pre span {
+code span {
   color: #0a0;
   font-family: monospace;
   font-size: 16px;
 
   display: inline-block; text-align: left;
 }
-pre span:before {
+code span:before {
   counter-increment: line;
   content: counter(line) ". ";
   color: #cc0;
