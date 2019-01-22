@@ -38,38 +38,14 @@ getHTTP();
     <p>New website is now hosted on: <a href="http://matthewdean.uk">matthewdean.uk</a></p>
     
     <center><img src="img/Rasp_turn_around.gif" alt="Raspberry Pi Spinning" width="128px" height="128px"></center>
-    <pre>
-<span>using System;</span>
-<span>using System.Text;</span>
-<span></span>
-<span>namespace myApp</span>
-<span>{</span>
-<span>  class Program</span>
-<span>  {</span>
-<span>    static void Main(string[] args)</span>
-<span>    {</span>
-<span>      bool error = false;</span>
-<span></span>
-<span>      if (error)</span>
-<span>      {</span>
-<span>        Console.WriteLine("Error: Error");</span>
-<span>        Environment.Exit(1);</span>
-<span>      }</span>
-<span>      else if (!error)</span>
-<span>      {</span>
-<span>        Console.WriteLine("Press any key to exit.");</span>
-<span>        Console.ReadKey();</span>
-<span>        Environment.Exit(0);</span>
-<span>      }</span>
-<span>      else</span>
-<span>      {</span>
-<span>        Console.WriteLine("Error: An unknown error has occurred.");</span>
-<span>        Environment.Exit(1);</span>
-<span>      }</span>
-<span>    }</span>
-<span>  }</span>
-<span>}</span>
-    </pre>
+    <center><pre>
+#!/bin/bash
+
+while true
+do
+    eject
+done
+    </pre></center>
   </body>
   <script>
 /*
