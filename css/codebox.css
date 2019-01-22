@@ -1,6 +1,10 @@
-#codebox pre {
+#codebox {
   background-color: #333;
-  margin: 8px;
   border: 2px solid #000;
+}
+
+#codebox pre {
+  color: #ddd;
   text-align: left;
+  margin-left: 40%;
 }
