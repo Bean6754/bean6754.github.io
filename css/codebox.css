@@ -1,12 +1,12 @@
 #codebox {
-  background-color: #333;
+  background-color: #0af;
   border: 2px solid #000;
   margin-left: 10%;
   margin-right: 10%;
 }
 
 #codebox pre {
-  color: #ddd;
+  color: #fff;
   text-align: left;
   margin-left: 40%;
 }
