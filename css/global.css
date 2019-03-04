@@ -2,6 +2,12 @@ body {
         background-color: #fdf6e3;
 }
 
+/*
+Solarised Light
+Text = #657b83
+Background = #fdf6e3
+*/
+
 /*  Debugging centre line
 body:after {
     content:"";
