@@ -1,11 +1,11 @@
 body {
-        background-color: #fdf6e3;
+        background-color: #D3DAE3;
 }
 
 /*
-Solarised Light
-Text = #657b83
-Background = #fdf6e3
+Arc Dark
+Text = #404552
+Background = #D3DAE3
 */
 
 /*  Debugging centre line
@@ -26,13 +26,13 @@ a {
 }
 
 pre {
-    color: #657b83;
+    color: #404552;
     font-family: Consolas, monospace;
     text-align: center;
 }
 
 h1, h2, h3, p {
-        color: #657b83;
+        color: #404552;
         font-family: sans-serif;
         text-align: center;
 }
@@ -54,7 +54,7 @@ a {
 }
 
 .navbar {
-        background-color: #b8cada;
+        background-color: #D3DAE3;
         left: 0;
         text-align: center;
         padding: 1px;
