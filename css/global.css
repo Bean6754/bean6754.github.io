@@ -1,5 +1,5 @@
 body {
-        background-color: #D3DAE3;
+        background-color: #404552;
 }
 
 /*
@@ -26,13 +26,13 @@ a {
 }
 
 pre {
-    color: #404552;
+    color: #D3DAE3;
     font-family: Consolas, monospace;
     text-align: center;
 }
 
 h1, h2, h3, p {
-        color: #404552;
+        color: #D3DAE3;
         font-family: sans-serif;
         text-align: center;
 }
@@ -54,7 +54,7 @@ a {
 }
 
 .navbar {
-        background-color: #D3DAE3;
+        background-color: #404552;
         left: 0;
         text-align: center;
         padding: 1px;
