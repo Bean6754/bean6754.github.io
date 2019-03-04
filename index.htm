@@ -9,22 +9,6 @@
     <link rel="icon" href="favicon.svg.png" type="image/png">
   </head>
   <body>
-    <script>
-function getHTTP()
-{
-  const Http = new XMLHttpRequest();
-  const url = (document.location.origin);
-  Http.open("GET", url);
-  Http.send();
-  Http.onreadystatechange=(e)=>
-  {
-    console.log(Http.responseText);
-  }
-}
-
-getHTTP();
-    </script>
-    
     <div class="navbar">
       <ul>
         <li><a class="current-page" href="index.htm">Home</a></li>
