@@ -26,13 +26,13 @@ a {
 }
 
 pre {
-    color: #D3DAE3;
+    color: #444;
     font-family: Consolas, monospace;
     text-align: center;
 }
 
 h1, h2, h3, p {
-        color: #D3DAE3;
+        color: #444;
         font-family: sans-serif;
         text-align: center;
 }
