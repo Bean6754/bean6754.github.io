@@ -22,7 +22,7 @@ body:after {
 
 
 a {
-        color: #dc312e;
+        color: #005580;
 }
 
 pre {
@@ -80,5 +80,5 @@ a {
 
 .navbar .current-page {
         padding-bottom: 2px;
-        border-bottom: 3px solid #dc312e;
+        border-bottom: 3px solid #005580;
 }
