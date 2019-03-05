@@ -1,5 +1,5 @@
 body {
-        background-color: #EEE;
+        background-color: #F9F9F9;
 }
 
 /*
@@ -26,13 +26,13 @@ a {
 }
 
 pre {
-    color: #444;
+    color: #232323;
     font-family: Consolas, monospace;
     text-align: center;
 }
 
 h1, h2, h3, p {
-        color: #444;
+        color: #232323;
         font-family: sans-serif;
         text-align: center;
 }
