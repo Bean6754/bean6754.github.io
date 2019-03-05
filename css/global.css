@@ -37,15 +37,19 @@ h1, h2, h3, p {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 26px;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 24px;
+}
+
+h3 {
+        font-size: 22px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a {
