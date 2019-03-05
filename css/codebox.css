@@ -1,11 +1,11 @@
 #codebox {
   background-color: #404552;
   border: 2px solid #000;
-  margin-left: 10%;
+  margin-left: 4px;
 }
 
 #codebox pre {
   color: #D3DAE3;
   font-weight: bold;
-  margin-left: 5%;
+  margin-left: 2px;
 }
