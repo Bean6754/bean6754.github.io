@@ -61,6 +61,7 @@ a {
 .navbar {
         background-color: #ffdc82;
         left: 0;
+        padding: 4px;
         top: 0;
 }
 
