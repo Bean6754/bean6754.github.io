@@ -1,12 +1,16 @@
 body {
-        background-color: #FFF6DD;
-        color: #232323;
+    background-color: #f5f6f7;
+    color: #5c616c;
 }
 
 /*
+Arc Light
+Text = #5c616c
+Background = #f5f6f7
+
 Arc Dark
 Text = #404552
-Background = #D3DAE3
+Background = #d3dae3
 */
 
 /*  Debugging centre line
@@ -23,7 +27,7 @@ body:after {
 
 
 a {
-        color: #005580;
+    color: #005580;
 }
 
 pre {
@@ -32,22 +36,22 @@ pre {
 }
 
 h1, h2, h3, p {
-        color: #232323;
-        font-family: sans-serif;
+    color: #232323;
+    font-family: sans-serif;
 }
 
 h1 {
-        font-size: 28px;
-        text-decoration: underline;
+    font-size: 28px;
+    text-decoration: underline;
 }
 
 h2 {
-        font-size: 26px;
-        text-decoration: underline;
+    font-size: 26px;
+    text-decoration: underline;
 }
 
 h3 {
-        font-size: 24px;
+    font-size: 24px;
 }
 
 p {
@@ -55,34 +59,34 @@ p {
 }
 
 a {
-        font-family: sans-serif;
+    font-family: sans-serif;
 }
 
 .navbar {
-        background-color: #ffdc82;
-        left: 0;
-        padding: 1px;
-        top: 0;
+    background-color: #ffdc82;
+    left: 0;
+    padding: 1px;
+    top: 0;
 }
 
 .navbar ul {
-        list-style-type: none;
-        padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 .navbar li {
-        display: inline-block;
-        font-family: sans-serif;
-        padding-left: 4px;
+    display: inline-block;
+    font-family: sans-serif;
+    padding-left: 4px;
 }
 
 .navbar a {
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: 700;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .navbar .current-page {
-        padding-bottom: 1px;
-        border-bottom: 2px solid #005580;
+    padding-bottom: 1px;
+    border-bottom: 2px solid #005580;
 }
