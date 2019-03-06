@@ -61,7 +61,7 @@ a {
 .navbar {
         background-color: #ffdc82;
         left: 0;
-        padding: 4px;
+        padding: 2px;
         top: 0;
 }
 
@@ -73,7 +73,7 @@ a {
 .navbar li {
         display: inline-block;
         font-family: sans-serif;
-        margin: 2px;
+        margin: 8px;
 }
 
 .navbar a {
