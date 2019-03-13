@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <title>Miniviewer</title>
+  <link rel="stylesheet" type="text/css" href="../css/global.css">
+  <script>
+function urlButtonFunc() {
+  var urlInputVar = document.getElementById('urlInput').value;
+  document.getElementById('iframeDiv').innerHTML = '<iframe width="480" height="240" src="' + urlInputVar + '"></iframe>';
+}
+  </script>
+</head>
+<body>
+  <h1>Miniviewer</h1>
+  
+  <a href="../index.php">Home</a>
+  
+  <input id="urlInput" type="text">
+  <button name="urlButton" onClick="urlButtonFunc()">Go</button>
+  <br>
+
+  <div id="iframeDiv"></div>
+</body>
+</html>
