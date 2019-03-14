@@ -2,4 +2,4 @@
 
 ## Licensing.
 
-See [LICENSE](LICENSE).
+See the ever-changing [LICENSE](LICENSE).
