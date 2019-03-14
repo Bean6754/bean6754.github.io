@@ -2,4 +2,4 @@
 
 ## Licensing.
 
-See [LICENSE](LICENSE.md).
+See [LICENSE](LICENSE).
