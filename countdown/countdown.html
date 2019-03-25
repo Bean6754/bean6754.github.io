@@ -15,8 +15,17 @@
 <script>
 function runCountdown()
 {
-    // Reset div contents
+    // Reset div contents and variables
     document.getElementById("demo").innerHTML = "";
+    var inputVar = NULL;
+    var countDownDate = NULL;
+    var x = NULL;
+    var now = NULL;
+    var distance = NULL;
+    var days = NULL;
+    var hours = NULL;
+    var minutes = NULL;
+    var seconds = NULL;
     
     // var inputVar = document.getElementById('date').innerHTML;
     var inputVar = document.getElementById('date').value + " " + document.getElementById('time').value;
