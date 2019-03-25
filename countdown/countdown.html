@@ -8,6 +8,7 @@
 <body>
 <!-- <p id="date">Jan 1, 2070 00:00:00</p> -->
 <input id="date" type="date" value="Jan 1, 2070 00:00:00">
+<input id="time" type="time" value="12:00 AM">
 <button onClick="runCountdown()">Go</button>
 <p id="demo"></p>
 
@@ -15,7 +16,7 @@
 function runCountdown()
 {
     // var inputVar = document.getElementById('date').innerHTML;
-    var inputVar = document.getElementById('date').value;
+    var inputVar = document.getElementById('date').value + " " + document.getElementById('time').value;
 
     // Set the date we're counting down to
     var countDownDate = new Date(inputVar).getTime();
