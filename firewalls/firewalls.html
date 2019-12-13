@@ -119,13 +119,13 @@
         <tr>
           <td><b>Disable ICMPv4 echo requests.</b></td>
           <td>netsh advfirewall firewall add rule name="A: ICMP Block incoming V4 echo request" protocol=icmpv4:8,any dir=in action=block</td>
-          <td>firewall-cmd --zone=public --remove-icmp-block=echo-reply --permanent</td>
+          <td>firewall-cmd --zone=public --remove-icmp-block=echo-request --permanent</td>
           <td>iptables -A INPUT --proto icmp -j DROP</td>
         </tr>
         <tr>
           <td><b>Enable ICMPv4 echo requests.</b></td>
           <td>netsh advfirewall firewall add rule name="A: ICMP Allow incoming V4 echo request" protocol=icmpv4:8,any dir=in action=allow</td>
-          <td>firewall-cmd --zone=public --remove-icmp-block=echo-reply --permanent</td>
+          <td>firewall-cmd --zone=public --remove-icmp-block=echo-request --permanent</td>
           <td>iptables -A INPUT --proto icmp -j ACCEPT</td>
         </tr>
         <tr>
