@@ -120,49 +120,49 @@
           <td><b>Disable ICMPv4 echo requests.</b></td>
           <td>netsh advfirewall firewall add rule name="A: ICMP Block incoming V4 echo request" protocol=icmpv4:8,any dir=in action=block</td>
           <td>firewall-cmd --zone=public --remove-icmp-block=echo-request --permanent</td>
-          <td>iptables -A INPUT --proto icmp -j DROP</td>
+          <td>iptables -A INPUT -p icmp --icmp-type echo-request -j DROP</td>
         </tr>
         <tr>
           <td><b>Enable ICMPv4 echo requests.</b></td>
           <td>netsh advfirewall firewall add rule name="A: ICMP Allow incoming V4 echo request" protocol=icmpv4:8,any dir=in action=allow</td>
           <td>firewall-cmd --zone=public --remove-icmp-block=echo-request --permanent</td>
-          <td>iptables -A INPUT --proto icmp -j ACCEPT</td>
+          <td>iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT</td>
         </tr>
         <tr>
           <td><b>Disable all of ICMPv4.</b></td>
           <td>netsh advfirewall firewall add rule name="A: ICMP Block incoming V4 all" protocol=icmpv4,any dir=in action=block</td>
           <td>firewall-cmd --zone=public --add-icmp-block={echo-request,echo-reply,timestamp-reply,timestamp-request} --permanent</td>
-          <td>iptables -t mangle -A PREROUTING -p icmp -j DROP</td>
+          <td>iptables -A INPUT -p icmp -j DROP</td>
         </tr>
         <tr>
           <td><b>Enable all of ICMPv4.</b></td>
           <td>netsh advfirewall firewall add rule name="A: ICMP Allow incoming V4 all" protocol=icmpv4,any dir=in action=allow</td>
           <td>firewall-cmd --zone=public --remove-icmp-block={echo-request,echo-reply,timestamp-reply,timestamp-request} --permanent</td>
-          <td>iptables -t mangle -A PREROUTING -p icmp -j ACCEPT</td>
+          <td>iptables -A INPUT -p icmp -j ACCEPT</td>
         </tr>
         <tr>
           <td><b>Disable ICMPv6 echo requests.</b></td>
           <td>netsh advfirewall firewall add rule name="A: ICMP Block incoming V6 echo request" protocol=icmpv6:128,any dir=in action=block</td>
           <td></td>
-          <td>N/A</td>
+          <td>iptables -A INPUT -p icmp6 --icmp-type echo-request -j DROP</td>
         </tr>
         <tr>
           <td><b>Enable ICMPv6 echo requests.</b></td>
           <td>netsh advfirewall firewall add rule name="A: ICMP Allow incoming V6 echo request" protocol=icmpv6:128,any dir=in action=allow</td>
           <td></td>
-          <td>N/A</td>
+          <td>iptables -A INPUT -p icmp6 --icmp-type echo-request -j ACCEPT</td>
         </tr>
         <tr>
           <td><b>Disable all of ICMPv6.</b></td>
           <td>netsh advfirewall firewall add rule name="A: ICMP Block incoming V6 all" protocol=icmpv6,any dir=in action=block</td>
           <td></td>
-          <td>iptables -t mangle -A PREROUTING -p icmp6 -j DROP</td>
+          <td>iptables -A INPUT -p icmp6 -j DROP</td>
         </tr>
         <tr>
           <td><b>Enable all of ICMPv6.</b></td>
           <td>netsh advfirewall firewall add rule name="A: ICMP Allow incoming V6 all" protocol=icmpv6,any dir=in action=allow</td>
           <td></td>
-          <td>iptables -t mangle -A PREROUTING -p icmp6 -j ACCEPT</td>
+          <td>iptables -A INPUT -p icmp6 -j ACCEPT</td>
         </tr>
       </tbody>
     </table>
