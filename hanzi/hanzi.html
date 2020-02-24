@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <title>About - bean6754.github.io</title>
+    <link rel="icon" href="../favicon.svg" type="image/png">
+    <script src="js/hanzi-writer.min.js"></script>
+  </head>
+  <body>
+    <a href="../index.html">Back..</a>
+    <h1>Hanzi</h1>
+    
+    <p>Hanzi</p>
+    <div id="character-target-div"></div>
+    <button id="animate-button">Animate</button>
+    
+    <script>
+    var writer = HanziWriter.create('character-target-div', 'a', {
+      width: 200,
+      height: 200,
+      padding: 5,
+      showOutline: true
+    });
+    document.getElementById('animate-button').addEventListener('click', function() {
+      writer.animateCharacter();
+    });
+    </script>
+    
+    <button onClick="generateFunction()">Generate</button><br>
+  </body>
+</html>
