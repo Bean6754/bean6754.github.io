@@ -29,7 +29,7 @@
         writer.animateCharacter();
       });
       
-      unset writer;
+      delete writer;
     }
     else if (document.getElementById("myHanzi").value !== null) {
       var writer = HanziWriter.create('character-target-div', document.getElementById("myHanzi").value, {
@@ -43,7 +43,7 @@
         writer.animateCharacter();
       });
       
-      unset writer;
+      delete writer;
     }
     else {
       var writer = HanziWriter.create('character-target-div', '屋', {
@@ -57,7 +57,7 @@
         writer.animateCharacter();
       });
       
-      unset writer;
+      delete writer;
     }
     </script>
   </body>
