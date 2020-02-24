@@ -17,7 +17,15 @@
     <button id="animate-button">Animate</button>
     
     <script>
-    if (document.getElementById("myHanzi").value != null) {
+    if (document.getElementById("myHanzi").value = null || document.getElementById("myHanzi").value ="") {
+      var writer = HanziWriter.create('character-target-div', '屋', {
+        width: 200,
+        height: 200,
+        padding: 5,
+        showOutline: true
+      });
+    }
+    else if (document.getElementById("myHanzi").value != null) {
       var writer = HanziWriter.create('character-target-div', document.getElementById("myHanzi").value, {
         width: 200,
         height: 200,
