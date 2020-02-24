@@ -4,25 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../css/global.css">
-    <title>About - bean6754.github.io</title>
+    <title>汉子 - bean6754.github.io</title>
     <link rel="icon" href="../favicon.svg" type="image/png">
     <script src="js/hanzi-writer.min.js"></script>
   </head>
   <body>
     <a href="../index.html">Back..</a>
-    <h1>Hanzi</h1>
+    <h1>汉子</h1>
     
-    <p>Hanzi</p>
+    <p>Name: <input type="text" id="myHanzi" value="屋"></p>
     <div id="character-target-div"></div>
     <button id="animate-button">Animate</button>
     
     <script>
-    var writer = HanziWriter.create('character-target-div', '屋', {
-      width: 200,
-      height: 200,
-      padding: 5,
-      showOutline: true
-    });
+    if (document.getElementById("myHanzi").value != null) {
+      var writer = HanziWriter.create('character-target-div', document.getElementById("myHanzi").value, {
+        width: 200,
+        height: 200,
+        padding: 5,
+        showOutline: true
+      });
+    }
+    else {
+      var writer = HanziWriter.create('character-target-div', '屋', {
+        width: 200,
+        height: 200,
+        padding: 5,
+        showOutline: true
+      });
+    }
+    
     document.getElementById('animate-button').addEventListener('click', function() {
       writer.animateCharacter();
     });
