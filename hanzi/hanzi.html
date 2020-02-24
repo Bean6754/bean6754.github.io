@@ -16,10 +16,10 @@
     
     <script>
       function getInput() {
-      if (document.getElementById("myHanzi").value == null || document.getElementById("myHanzi").value == "") {
+      if (document.getElementById("myHanzi").value != null) {
         userInput = document.getElementById("myHanzi").value;
       }
-      else if (document.getElementById("myHanzi").value !== null) {
+      else if (document.getElementById("myHanzi").value = null) {
         userInput = '屋';
       }
       else {
