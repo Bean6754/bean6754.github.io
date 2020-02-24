@@ -1,7 +1,7 @@
 // https://www.jsdelivr.com/package/npm/hanzi-writer-data
 // https://cdn.jsdelivr.net/npm/hanzi-writer-data@${VERSION}/${char}.json;
 
-var VERSION = "2.0";
+var VERSION = "2.0.1";
 var getCharDataUrl = char =>
   `js/@${VERSION}/${char}.json`;
 
