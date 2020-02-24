@@ -14,6 +14,9 @@
     
     <p>Name: <input type="text" id="myHanzi" value="屋"></p>
     
+    <div id="character-target-div"></div>
+    <button id="animate-button" onClick="getInput()">Animate</button>
+    
     <script>
     function getInput() {
       if (document.getElementById("myHanzi").value == null || document.getElementById("myHanzi").value == "") {
@@ -26,14 +29,8 @@
         var userInput = '屋';
       }
     }
-    </script>
     
-    <!-- Sandwich -->
-    <div id="character-target-div"></div>
-    <button id="animate-button" onClick="getInput()">Animate</button>
-    
-    <script>
-    var writer = HanziWriter.create('character-target-div', 'userInput', {
+    var writer = HanziWriter.create('character-target-div', userInput, {
         width: 200,
         height: 200,
         padding: 5,
