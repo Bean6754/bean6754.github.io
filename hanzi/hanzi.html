@@ -18,35 +18,16 @@
     
     <script>
     if (document.getElementById("myHanzi").value == null || document.getElementById("myHanzi").value == "") {
-      var writer = HanziWriter.create('character-target-div', '屋', {
-        width: 200,
-        height: 200,
-        padding: 5,
-        showOutline: true
-      });
-      
-      document.getElementById('animate-button').addEventListener('click', function() {
-        writer.animateCharacter();
-      });
-      
-      delete writer;
+      var userInput = document.getElementById("myHanzi").value;
     }
     else if (document.getElementById("myHanzi").value !== null) {
-      var writer = HanziWriter.create('character-target-div', document.getElementById("myHanzi").value, {
-        width: 200,
-        height: 200,
-        padding: 5,
-        showOutline: true
-      });
-      
-      document.getElementById('animate-button').addEventListener('click', function() {
-        writer.animateCharacter();
-      });
-      
-      delete writer;
+      var userInput = '屋';
     }
     else {
-      var writer = HanziWriter.create('character-target-div', '屋', {
+      var userInput = '屋';
+    }
+    
+    var writer = HanziWriter.create('character-target-div', 'userInput', {
         width: 200,
         height: 200,
         padding: 5,
@@ -55,10 +36,6 @@
       
       document.getElementById('animate-button').addEventListener('click', function() {
         writer.animateCharacter();
-      });
-      
-      delete writer;
-    }
     </script>
   </body>
 </html>
