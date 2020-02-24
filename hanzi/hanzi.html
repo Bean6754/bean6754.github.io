@@ -29,7 +29,7 @@
     </script>
     
     <div id="character-target-div"></div>
-    <button id="animate-button" onClick="getInput()">Animate</button>
+    <button id="animate-button">Animate</button>
     
     <script>
     var writer = HanziWriter.create('character-target-div', userInput, {
@@ -40,6 +40,7 @@
       });
       
       document.getElementById('animate-button').addEventListener('click', function() {
+        getInput();
         writer.animateCharacter();
       });
     </script>
