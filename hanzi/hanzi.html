@@ -24,6 +24,12 @@
         padding: 5,
         showOutline: true
       });
+      
+      document.getElementById('animate-button').addEventListener('click', function() {
+        writer.animateCharacter();
+      });
+      
+      unset writer;
     }
     else if (document.getElementById("myHanzi").value !== null) {
       var writer = HanziWriter.create('character-target-div', document.getElementById("myHanzi").value, {
@@ -32,6 +38,12 @@
         padding: 5,
         showOutline: true
       });
+      
+      document.getElementById('animate-button').addEventListener('click', function() {
+        writer.animateCharacter();
+      });
+      
+      unset writer;
     }
     else {
       var writer = HanziWriter.create('character-target-div', '屋', {
@@ -40,13 +52,13 @@
         padding: 5,
         showOutline: true
       });
+      
+      document.getElementById('animate-button').addEventListener('click', function() {
+        writer.animateCharacter();
+      });
+      
+      unset writer;
     }
-    
-    document.getElementById('animate-button').addEventListener('click', function() {
-      writer.animateCharacter();
-    });
     </script>
-    
-    <button onClick="generateFunction()">Generate</button><br>
   </body>
 </html>
