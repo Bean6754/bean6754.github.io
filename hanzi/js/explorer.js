@@ -1,6 +1,9 @@
+// https://www.jsdelivr.com/package/npm/hanzi-writer-data
+// https://cdn.jsdelivr.net/npm/hanzi-writer-data@${VERSION}/${char}.json;
+
 var VERSION = "2.0";
 var getCharDataUrl = char =>
-  `https://cdn.jsdelivr.net/npm/hanzi-writer-data@${VERSION}/${char}.json`;
+  `@${VERSION}/${char}.json`;
 
 function loadData(char, onLoad, onError) {
   var xhr = new XMLHttpRequest();
