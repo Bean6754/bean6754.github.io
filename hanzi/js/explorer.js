@@ -3,7 +3,7 @@
 
 var VERSION = "2.0";
 var getCharDataUrl = char =>
-  `@${VERSION}/${char}.json`;
+  `js/@${VERSION}/${char}.json`;
 
 function loadData(char, onLoad, onError) {
   var xhr = new XMLHttpRequest();
