@@ -14,17 +14,19 @@
     
     <p>Name: <input type="text" id="myHanzi" value="屋"></p>
     <div id="character-target-div"></div>
-    <button id="animate-button">Animate</button>
+    <button id="animate-button" onClick="getInput()">Animate</button>
     
     <script>
-    if (document.getElementById("myHanzi").value == null || document.getElementById("myHanzi").value == "") {
-      var userInput = document.getElementById("myHanzi").value;
-    }
-    else if (document.getElementById("myHanzi").value !== null) {
-      var userInput = '屋';
-    }
-    else {
-      var userInput = '屋';
+    function getInput() {
+      if (document.getElementById("myHanzi").value == null || document.getElementById("myHanzi").value == "") {
+        var userInput = document.getElementById("myHanzi").value;
+      }
+      else if (document.getElementById("myHanzi").value !== null) {
+        var userInput = '屋';
+      }
+      else {
+        var userInput = '屋';
+      }
     }
     
     var writer = HanziWriter.create('character-target-div', 'userInput', {
