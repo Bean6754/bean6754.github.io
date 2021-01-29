@@ -1,6 +1,7 @@
 body {
     background-color: #5c616c;
     color: #f5f6f7;
+    font-family: sans-serif;
 }
 
 /*  Debugging centre line
@@ -16,7 +17,7 @@ body:after {
 }*/
 
 
-a {
+a, a:visited {
     color: #005580;
 }
 
@@ -28,7 +29,6 @@ pre {
 
 h1, h2, h3, p {
     color: #232323;
-    font-family: sans-serif;
 }
 
 h1 {
@@ -45,8 +45,4 @@ h3 {
 
 p {
     font-size: 18px;
-}
-
-a {
-    font-family: sans-serif;
 }
