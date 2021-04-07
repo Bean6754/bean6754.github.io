@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Firewalls</title>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/table.css">
+  </head>
+  <body>
+    <a href="../">Back..</a>
+    <h1>Firewalls</h1>
+    
+    <h2>Windows</h2>
+    <h3>netsh</h3>
+    <p>'netsh' is the network shell of Windows. It is used to control the firewall, log network activity, reset the Windows networking stack and more.</p>
+    <p>Using the command line:</p>
+    <p>Turn the firewall off: <code>netsh advfirewall set allprofiles state off</code></p>
+    <p>Turn the firewall on:  <code>netsh advfirewall set allprofiles state on</code></p>
+    <p>Check status of firewall: <code>netsh advfirewall show allprofiles</code></p>
+    <p>Reset Windows Firewall to default settings: <code>netsh advfirewall reset</code></p>
+    
+    
+    <h2>Linux</h2>
+    <h3>iptables and nftables</h3>
+    <p>nftables is a userspace firewall that was created for the Linux networking stack.</p>
+    <p>It is very different from iptables because it it supposed to replace certain parts of netfilter.</p>
+    <p>I.E: nftables replaces the popular {ip,ip6,arp,eb}tables.</p>
+    
+    <br><p>The syntax is also very different:</p>
+    <p>(A command to drop any packets with the destination IP address 1.2.3.4)</p>
+    <p>nftables: <code>nft add rule ip filter output ip daddr 1.2.3.4 drop</code></p>
+    <p>iptables: <code>iptables -A OUTPUT -d 1.2.3.4 -j DROP</code></p>
+    
+    <br><p><i>iptables</i> only applies to IPv4, whereas <i>ip6tables</i> will apply to IPv6, <i>arptables</i> will apply to ARP and <i>ebtables</i> will apply to Ethernet bridges.</p>
+    <p>In most Linux systems, iptables is insalled to <i>/usr/sbin/iptables</i>, but a symbolic link is usually found at <i>/sbin/iptables</i>.</p>
+    
+    <p><u>Table</u></p>
+    <p>NOTE: Some of the Windows firewall commands are PowerShell commands. So run all of your Windows commands through PowerShell instead of CMD.</p>
+    <p>NOTE: I add 'A: ' to the beginning of custom rules, so that they are grouped together and easy to locate.</p>
+    <table>
+      <thead>
+        <tr>
+          <th><u>Description</u></th>
+          <th><u>Windows Firewall</u></th>
+          <th><u>Linux (firewalld - iptables tool)</u></th>
+          <th><u>Linux (iptables)</u></th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <tr>
+          <td><b>Turn firewall off.</b></td>
+          <td>netsh advfirewall set allprofiles state off</td>
+          <td>systemctl stop firewalld</td>
+          <td>systemctl stop iptables</td>
+        </tr>
+        <tr>
+          <td><b>Turn firewall on.</b></td>
+          <td>netsh advfirewall set allprofiles state on</td>
+          <td>systemctl start firewalld</td>
+          <td>systemctl start iptables</td>
+        </tr>
+        <tr>
+          <td><b>List firewall profiles.</b></td>
+          <td>netsh advfirewall show allprofiles</td>
+          <td>firewall-cmd --list-all</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td><b>List firewall rules.</b></td>
+          <td>netsh advfirewall firewall show rule name=all</td>
+          <td>firewall-cmd --list-services && firewall-cmd --list-ports</td>
+          <td>iptables -L</td>
+        </tr>
+        <tr>
+          <td><b>Delete all firewall rules.</b></td>
+          <td>netsh advfirewall reset/Remove-NetFirewallRule</td>
+          <td>Remove from: /etc/firewalld/zones/<zone_name>.xml</td>
+          <td>iptables -F</td>
+        </tr>
+        <tr>
+          <td><b>Delete firewall profiles/chains.</b></td>
+          <td>netsh advfirewall reset</td>
+          <td>rm -f /etc/firewalld/zones/*.xml</td>
+          <td>iptables -X</td>
+        </tr>
+        <tr>
+          <td><b>Select firewall profile.</b></td>
+          <td>Set-NetFirewallProfile -Name &lt;ProfileName&gt;</td>
+          <td>firewall-cmd --set-default-zone=zone</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td><b>Turn firewall off for remote computer.</b></td>
+          <td>netsh -r &lt;ComputerName&gt; advfirewall set publicprofile state off</td>
+          <td>ssh user@server 'sudo systemctl stop firewalld'</td>
+          <td>ssh user@server 'sudo systemctl stop iptables'</td>
+        </tr>
+        <tr>
+          <td><b>Turn firewall on for remote computer.</b></td>
+          <td>netsh -r &lt;ComputerName&gt; advfirewall set publicprofile state on</td>
+          <td>ssh user@server 'sudo systemctl start firewalld'</td>
+          <td>ssh user@server 'sudo systemctl start iptables'</td>
+        </tr>
+        <tr>
+          <td><b>Enable firewall logging to specifc file.</b></td>
+          <td>netsh advfirewall set currentprofile logging filename "C:\temp\pfirewall.log"</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td><b>Enable firewall logging.</b></td>
+          <td>netsh advfirewall set allprofile logging droppedconnections enable<br>netsh advfirewall set allprofile logging allowedconnections enable<br>(stored in '%SystemRoot%\system32\logfiles\firewall\pfirewall.log' by default)</td>
+          <td>firewall-cmd --set-log-denied=all/unicast/broadcast/multicast/off (saves to /etc/sysconfig/firewalld -> LogDenied=all/etc.)</td>
+          <td>iptables -A INPUT -j LOGGING<br>(stored in '/var/log/messages')</td>
+        </tr>
+        
+        <tr>
+          <td><b>Disable ICMPv4 echo requests.</b></td>
+          <td>netsh advfirewall firewall add rule name="A: ICMP Block incoming V4 echo request" protocol=icmpv4:8,any dir=in action=block</td>
+          <td>firewall-cmd --zone=public --remove-icmp-block=echo-request --permanent (NOTE: firewall-cmd --get-icmptypes)</td>
+          <td>iptables -A INPUT -p icmp --icmp-type echo-request -j DROP (NOTE: /sbin/iptables -p icmp -h)</td>
+        </tr>
+        <tr>
+          <td><b>Enable ICMPv4 echo requests.</b></td>
+          <td>netsh advfirewall firewall add rule name="A: ICMP Allow incoming V4 echo request" protocol=icmpv4:8,any dir=in action=allow</td>
+          <td>firewall-cmd --zone=public --remove-icmp-block=echo-request --permanent</td>
+          <td>iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT</td>
+        </tr>
+        <tr>
+          <td><b>Disable all of ICMPv4.</b></td>
+          <td>netsh advfirewall firewall add rule name="A: ICMP Block incoming V4 all" protocol=icmpv4,any dir=in action=block</td>
+          <td>firewall-cmd --zone=public --add-icmp-block={echo-request,echo-reply,timestamp-reply,timestamp-request} --permanent</td>
+          <td>iptables -A INPUT -p icmp -j DROP</td>
+        </tr>
+        <tr>
+          <td><b>Enable all of ICMPv4.</b></td>
+          <td>netsh advfirewall firewall add rule name="A: ICMP Allow incoming V4 all" protocol=icmpv4,any dir=in action=allow</td>
+          <td>firewall-cmd --zone=public --remove-icmp-block={echo-request,echo-reply,timestamp-reply,timestamp-request} --permanent</td>
+          <td>iptables -A INPUT -p icmp -j ACCEPT</td>
+        </tr>
+        <tr>
+          <td><b>Disable ICMPv6 echo requests.</b></td>
+          <td>netsh advfirewall firewall add rule name="A: ICMP Block incoming V6 echo request" protocol=icmpv6:128,any dir=in action=block</td>
+          <td></td>
+          <td>iptables -A INPUT -p icmp6 --icmp-type echo-request -j DROP</td>
+        </tr>
+        <tr>
+          <td><b>Enable ICMPv6 echo requests.</b></td>
+          <td>netsh advfirewall firewall add rule name="A: ICMP Allow incoming V6 echo request" protocol=icmpv6:128,any dir=in action=allow</td>
+          <td></td>
+          <td>iptables -A INPUT -p icmp6 --icmp-type echo-request -j ACCEPT</td>
+        </tr>
+        <tr>
+          <td><b>Disable all of ICMPv6.</b></td>
+          <td>netsh advfirewall firewall add rule name="A: ICMP Block incoming V6 all" protocol=icmpv6,any dir=in action=block</td>
+          <td></td>
+          <td>iptables -A INPUT -p icmp6 -j DROP</td>
+        </tr>
+        <tr>
+          <td><b>Enable all of ICMPv6.</b></td>
+          <td>netsh advfirewall firewall add rule name="A: ICMP Allow incoming V6 all" protocol=icmpv6,any dir=in action=allow</td>
+          <td></td>
+          <td>iptables -A INPUT -p icmp6 -j ACCEPT</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <br><h2>Sources:</h2>
+    <p>Windows</p>
+    <a href="http://techgenix.com/quicklyturnonoffwindowsfirewallusingcommandline/">TechGenix</a>
+    <a href="http://www.itprotoday.com/windows-8/top-10-windows-firewall-netsh-commands">IT Pro Today</a>
+    <a href="http://www.itprotoday.com/management-mobility/q-how-can-i-generate-windows-firewall-packet-log-shows-all-incoming-network">IT Pro Today</a>
+    <a href="https://searchenterprisedesktop.techtarget.com/photostory/4500257332/Top-Windows-command-line-commands/6/Check-Windows-Firewall-status-with-netsh-advfirewall-show-allprofiles">TechTarget</a>
+    <a href="https://www.howtogeek.com/howto/windows-vista/allow-pings-icmp-echo-request-through-your-windows-vista-firewall/">How-To Geek</a>
+    <a href="https://www.iana.org/assignments/icmpv6-parameters/icmpv6-parameters.xhtml#icmpv6-parameters-codes-6">Internet Assigned Numbers Authority (IANA)</a>
+    <p>Linux - firewalld</p>
+    <a href="https://en.wikipedia.org/wiki/Firewalld">Wikipedia - firewalld</a>
+    <a href="https://www.tecmint.com/block-ping-icmp-requests-to-linux/">TecMint</a>
+    <a href="https://www.tecmint.com/firewalld-rules-for-centos-7/2/">TecMint</a>
+    <a href="https://unix.stackexchange.com/questions/114734/can-logging-be-enabled-in-firewalld">Stack Overflow</a>
+    <p>Linux - iptables/nftables</p>
+    <a href="https://en.wikipedia.org/wiki/Nftables">Wikipedia - nftables</a>
+    <a href="https://netfilter.org/projects/nftables/">Netfilter.org</a>
+    <a href="http://raynux.com/blog/2009/04/15/iptables-quick-command-list/">Rayhan's blog</a>
+    <a href="https://www.thegeekstuff.com/2012/08/iptables-log-packets/">The Geek Stuff</a>
+  </body>
+</html>
