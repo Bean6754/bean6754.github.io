@@ -1,0 +1,39 @@
+body {
+	background-image: url(../img/wallpaper.jpg);
+	background-position: center top;
+	background-size: 100% auto;
+	background-color: #ccc;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  font-size: 16px;
+  text-align: left;
+  text-decoration: none;
+}
+
+#taskbar {
+	width: 100%;
+}
+
+#taskbar ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background-color: #111;
+}
+
+#taskbar li {
+	float: left;
+	
+	display: block;
+    padding: 4px;
+    text-decoration: none;
+}
+
+#taskbar img:hover {
+	opacity: 0.7;
+}
