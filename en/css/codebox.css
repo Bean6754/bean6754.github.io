@@ -7,3 +7,12 @@
   color: #D3DAE3;
   margin-left: 2px;
 }
+
+#codebox a {
+  color: #aad6ff;
+  text-decoration: none;
+}
+
+#codebox a:hover {
+  text-decoration: underline;
+}
