@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miniviewer</title>
+  <link rel="stylesheet" type="text/css" href="../css/global.css">
+  <link rel="icon" href="../favicon.svg.png" type="image/png">
+  <style>
+    #iframeDiv iframe {
+      resize: both;
+      overflow: auto;
+    }
+  </style>
+  <script>
+function urlButtonFunc() {
+  var urlInputVar = document.getElementById('urlInput').value;
+  document.getElementById('iframeDiv').innerHTML = '<iframe width="480" height="240" src="' + urlInputVar + '"></iframe>';
+}
+  </script>
+</head>
+<body>
+  <h1>Miniviewer</h1>
+  
+  <p><a href="../index.html">Home</a></p>
+  
+  <input id="urlInput" type="text">
+  <button name="urlButton" onClick="urlButtonFunc()" placeholder="https://www.">Go</button>
+  <br>
+
+  <div id="iframeDiv"></div>
+</body>
+</html>
