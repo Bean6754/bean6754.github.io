@@ -1,0 +1,13 @@
+#taskbar-contents {
+	position: fixed;
+	top: 10;
+	background-color: #fff;
+}
+
+#taskbar-contents a {
+	color: #000;
+	font-size: 16px;
+	font-family: Arial;
+	text-decoration: none;
+	padding: 12px;
+}
