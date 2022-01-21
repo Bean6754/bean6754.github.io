@@ -38,10 +38,35 @@
     
     <h1>Example Code</h1>
     
+    <h2>GBDK (C)</h2>
+    <button class="accordion">GBDK (C)</button>
+    <div class="panel">
+      <pre><code>
+/*
+  Fill in more later.
+*/
+#include &lt;gb.h/gb.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+void clear() {
+  printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+}
+
+void main() {
+  printf("WELCOME\n");
+  printf("Press A to continue..\n");
+  waitpad(J_A);
+  clear();
+}
+      </pre></code>
+    </div>
+      
+    
     <h2>C++</h2>
-<button class="accordion">C++</button>
-<div class="panel">
-<pre><code>
+    <button class="accordion">C++</button>
+    <div class="panel">
+      <pre><code>
 #include &lt;iostream&gt;
 #include &lt;fstream&gt;
 
@@ -81,9 +106,9 @@ int main(void)
   return 0;
 
 }
-</code></pre>
-</div>
-<script>
+      </code></pre>
+    </div>
+    <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -102,6 +127,6 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
-</script>
+    </script>
   </body>
 </html>
