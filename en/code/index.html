@@ -5,24 +5,6 @@
     <title>Code</title>
     <link rel="stylesheet" type="text/css" href="../css/global.css">
     <style>
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    background-color: #222;
-    color: #eee;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-    background-color: #272727;
-}
-
 /* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0 18px;
@@ -39,7 +21,6 @@
     <h1>Example Code</h1>
     
     <h2>GBDK (C)</h2>
-    <button class="accordion">GBDK (C)</button>
     <div class="panel">
       <pre><code>
 /*
@@ -64,7 +45,6 @@ void main() {
       
     
     <h2>C++</h2>
-    <button class="accordion">C++</button>
     <div class="panel">
       <pre><code>
 #include &lt;iostream&gt;
@@ -108,11 +88,36 @@ int main(void)
 }
       </code></pre>
     </div>
-    <script>
+    
+    <h2>JavaScript 🤢</h2>
+    <div id="panel">
+      <pre><code>
+/*  -- CSS --  /*
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #222;
+    color: #eee;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #272727;
+}
+
+
+/*  -- JavaScript --  /*
+&lt;script&gt;
 var acc = document.getElementsByClassName("accordion");
 var i;
 
-for (i = 0; i < acc.length; i++) {
+for (i = 0; i &lt; acc.length; i++) {
     acc[i].addEventListener("click", function() {
         /* Toggle between adding and removing the "active" class,
         to highlight the button that controls the panel */
@@ -127,6 +132,8 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
-    </script>
+&lt;/script&gt;
+      </code></pre>
+    </div>
   </body>
 </html>
