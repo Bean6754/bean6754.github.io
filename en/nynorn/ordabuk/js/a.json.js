@@ -100,7 +100,7 @@ let a = `[
     ""
   ],
   "Gender": "nm."
-}
+},
 
 {
   "Name": "ala",
@@ -110,7 +110,7 @@ let a = `[
     "you have a mothering mother"
   ],
   "Gender": "vs."
-}
+},
 
 {
   "Name": "ali",
@@ -123,13 +123,13 @@ let a = `[
 
 {
   "Name": "all",
-  "Definition": "all", "neu: over:" dað er alt it is over; alt i sennall at once",
+  "Definition": "all",
   "Examples": [
     "alt i senn",
     "all at once"
   ],
   "Gender": "pron"
-}
+},
 
 {
   "Name": "all",
