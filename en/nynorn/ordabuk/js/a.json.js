@@ -1,3 +1,4 @@
+/* Credit to: https://nornlanguage.x10.mx/index.php?nynorn_dic and http://nornlanguage.x10.mx/wiki/index.php/Main_Page */
 let a = `[
 {
 	"Name": "ag",
@@ -101,7 +102,44 @@ let a = `[
   "Gender": "nm."
 }
 
+{
+  "Name": "ala",
+  "Definition": ["to feed", "to rear, support", "to entice"],
+  "Examples": [
+    "du hever alið kuna",
+    "you have a mothering mother"
+  ],
+  "Gender": "vs."
+}
 
+{
+  "Name": "ali",
+  "Definition": "young domestic animal",
+  "Examples": [
+    ""
+  ],
+  "Gender": "nn."
+}
+
+{
+  "Name": "all",
+  "Definition": "all", "neu: over:" dað er alt it is over; alt i sennall at once",
+  "Examples": [
+    "alt i senn",
+    "all at once"
+  ],
+  "Gender": "pron"
+}
+
+{
+  "Name": "all",
+  "Definition": "over",
+  "Examples": [
+    "dað er alt",
+    "it is over"
+  ],
+  "Gender": "neu."
+}
 
 
 ]`
