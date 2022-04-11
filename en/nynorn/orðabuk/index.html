@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-gb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../css/global.css">
+  <style>
+#searchbar {
+  align: center;
+}
+
+#list-holder {
+  list-style-type: none;
+}
+  </style>
+  <script src="js/a.json.js"></script>
+  <script>
+let data = JSON.parse(a)
+
+function search_words() {
+  let input = document.getElementById('searchbar').value
+  input = input.toLowerCase();
+  let x = document.querySelector('#list-holder');
+  x.innerHTML = ""
+
+  for (i = 0; i < data.length; i++) {
+    let obj = data[i];
+
+    if (obj.Name.toLowerCase().includes(input)) {
+      const elem = document.createElement("li")
+      elem.innerHTML = `${obj.Name} - ${obj.Definition}`
+      x.appendChild(elem)
+    }
+  }
+}
+
+  </script>
+</head>
+<body>
+  <div id="div_searchbar" align="center">
+    <input id="searchbar" onkeyup="search_words()" type="text" Name="search">
+    <ul id="list-holder"></ul>
+  </div>
+</body>
+</html>
