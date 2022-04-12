@@ -141,5 +141,24 @@ let a = `[
   "Gender": "neu."
 }
 
+{
+  "Name: "altra",
+  "Definition": "to hesitate"
+  "Examples": [
+    "at altra at gera e-t",
+    "hann myn ikke altra at gera dað"
+  ],
+  "Gender": "vw."
+}
+
+{
+  "Name": "amla"
+  "Definition": ["to make little progress", "dabble at job"],
+  "Exmaples:" [
+    "at amla at e-u"
+  ],
+  "Gender": "vw."
+}
+
 
 ]`
