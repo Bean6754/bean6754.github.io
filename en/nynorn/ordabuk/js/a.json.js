@@ -142,7 +142,7 @@ let a = `[
 },
 
 {
-  "Name: "altra",
+  "Name": "altra",
   "Definition": "to hesitate"
   "Examples": [
     "at altra at gera e-t",
