@@ -139,7 +139,7 @@ let a = `[
     "it is over"
   ],
   "Gender": "neu."
-}
+},
 
 {
   "Name: "altra",
@@ -149,7 +149,7 @@ let a = `[
     "hann myn ikke altra at gera dað"
   ],
   "Gender": "vw."
-}
+},
 
 {
   "Name": "amla"
