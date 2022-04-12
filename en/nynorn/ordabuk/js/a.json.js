@@ -154,7 +154,7 @@ let a = `[
 {
   "Name": "amla",
   "Definition": ["to make little progress", "dabble at job"],
-  "Exmaples:" [
+  "Examples": [
     "at amla at e-u"
   ],
   "Gender": "vw."
