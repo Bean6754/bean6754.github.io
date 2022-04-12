@@ -152,7 +152,7 @@ let a = `[
 },
 
 {
-  "Name": "amla"
+  "Name": "amla",
   "Definition": ["to make little progress", "dabble at job"],
   "Exmaples:" [
     "at amla at e-u"
