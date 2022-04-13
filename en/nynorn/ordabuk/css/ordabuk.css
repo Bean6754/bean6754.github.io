@@ -22,6 +22,10 @@
 #searchbar:-moz-placeholder { color: #eee; } /* Old Firefox. */
 #searchbar::-moz-placeholder { color: #eee; } /* Firefox. */
 
+#div_lettertitle h2 {
+  text-align: left;
+}
+
 #list-holder-a {
   list-style-type: none;
   text-align: left;
