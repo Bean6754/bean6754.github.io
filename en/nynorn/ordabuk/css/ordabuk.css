@@ -1,0 +1,14 @@
+#searchbar {
+  width: 30%;
+  height: 20px;
+  padding: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#list-holder {
+  list-style-type: none;
+  text-align: left;
+}
