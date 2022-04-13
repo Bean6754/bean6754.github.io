@@ -4,45 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="../../css/global.css">
+  <link rel="stylesheet" type="text/css" href="css/ordabuk.css">
   <title>Orðabuk</title>
-  <style>
-#searchbar {
-  width: 30%;
-  height: 20px;
-  padding: 2px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-#list-holder {
-  list-style-type: none;
-  text-align: left;
-}
-  </style>
   <script src="js/a.json.js"></script>
-  <script>
-let data = JSON.parse(a)
-
-function search_words() {
-  let input = document.getElementById('searchbar').value
-  input = input.toLowerCase();
-  let x = document.querySelector('#list-holder');
-  x.innerHTML = ""
-
-  for (i = 0; i < data.length; i++) {
-    let obj = data[i];
-
-    if (obj.Name.toLowerCase().includes(input)) {
-      const elem = document.createElement("li")
-      elem.innerHTML = `${obj.Name} (<span style="color:#0e0;">${obj.Gender}</span>) - ${obj.Definition} <span style="font-size:14px;">(<span style="color:#777;">${obj.Examples}</span>)</span>`
-      x.appendChild(elem)
-    }
-  }
-}
-
-  </script>
+  <script src="js/search.js"></script>
 </head>
 <body>
   <a href="../">Back..</a>
