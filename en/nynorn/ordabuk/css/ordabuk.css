@@ -1,12 +1,21 @@
 #searchbar {
+  background-color: #222;
+  color: #eee;
   width: 30%;
-  height: 20px;
+  height: 26px;
   padding: 2px 0;
   display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
   box-sizing: border-box;
 }
+
+#searchbar::placeholder { color: #eee; }
+#searchbar:-ms-input-placeholder { color: #eee; } /* IE. */
+#searchbar::-ms-input-placeholder { color: #eee; } /* Edge. */
+#searchbar::-webkit-input-placeholder { color: #eee; } /* Old WebKit. */
+#searchbar:-moz-placeholder { color: #eee; } /* Old Firefox. */
+#searchbar::-moz-placeholder { color: #eee; } /* Firefox. */
 
 #list-holder {
   list-style-type: none;
