@@ -7,6 +7,6 @@ let h = `[
 		"Velkomen til Lervik i sud Hjetlandi - ",
 		"Welcome to Lerwick in south Shetland"
 	],
-	"Gender": "nf."
+	"Gender": "nn."
 }
 ]`
