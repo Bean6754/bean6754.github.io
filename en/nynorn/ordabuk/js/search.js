@@ -1,6 +1,7 @@
-let data_a = JSON.parse(a);
+let data_a = JSON.parse(a) + JSON.parse(n);
 
-function search_words_a() {
+function search_words() {
+  // A
   let input_a = document.getElementById('searchbar').value;
   input_a = input_a.toLowerCase();
   let x_a = document.querySelector('#list-holder-a');
