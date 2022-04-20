@@ -17,7 +17,7 @@ function search_words() {
 
     if (obj_a.Name.toLowerCase().includes(input)) {
       const elem_a = document.createElement("li");
-      elem_a.innerHTML = `${obj_a.Name} (<span style="color:#0e0;">${obj_a.Gender}</span>) - ${obj_a.Definition} <span style="font-size:14px;">(<span style="color:#777;">${obj_a.Examples}</span>)</span>`;
+      elem_a.innerHTML = `${obj_a.Name} (<span style="color:#0e0;">${obj_a.Gender}</span>) - ${obj_a.Definition} <span style="font-size:14px;">(<span style="color:#ccc;">${obj_a.Examples}</span>)</span>`;
       x_a.appendChild(elem_a);
     }
   }
@@ -28,7 +28,7 @@ function search_words() {
 
     if (obj_n.Name.toLowerCase().includes(input)) {
       const elem_n = document.createElement("li");
-      elem_n.innerHTML = `${obj_n.Name} (<span style="color:#0e0;">${obj_n.Gender}</span>) - ${obj_n.Definition} <span style="font-size:14px;">(<span style="color:#777;">${obj_n.Examples}</span>)</span>`;
+      elem_n.innerHTML = `${obj_n.Name} (<span style="color:#0e0;">${obj_n.Gender}</span>) - ${obj_n.Definition} <span style="font-size:14px;">(<span style="color:#ccc;">${obj_n.Examples}</span>)</span>`;
       x_n.appendChild(elem_n);
     }
   }
