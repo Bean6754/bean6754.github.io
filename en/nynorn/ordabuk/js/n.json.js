@@ -5,7 +5,7 @@ let n = `[
 	"Definition": ["north", "northern"],
 	"Examples": [
 		"Velkomen til Unst i nord Hjetlandi - ",
-		"Welcome to Unst in North Shetland"
+		"Welcome to Unst in north Shetland"
 	],
 	"Gender": "nn."
 },
