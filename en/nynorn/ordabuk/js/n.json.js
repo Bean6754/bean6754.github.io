@@ -4,7 +4,7 @@ let n = `[
   "Name": "Nord",
 	"Definition": ["north", "northern"],
 	"Examples": [
-		"Velkomen til Unst i nord Hjetlandi ",
+		"Velkomen til Unst i nord Hjetlandi - ",
 		"Welcome to Unst in North Shetland"
 	],
 	"Gender": "nn."
@@ -14,7 +14,7 @@ let n = `[
   "Name": "Norn",
 	"Definition": ["norn language", "an extinct north germanic language that was spoken in orkney, shetland and caithness"],
 	"Examples": [
-		"Hann/Hun talaði norn ",
+		"Hann/Hun talaði norn - ",
 		"He/She spoke norn"
 	],
 	"Gender": "nf."
@@ -24,7 +24,7 @@ let n = `[
   "Name": "Nynorn",
 	"Definition": ["new norn language", "a revival project of the extinct norn language"],
 	"Examples": [
-		"Eg tala nynorn ",
+		"Eg tala nynorn - ",
 		"I speak nynorn"
 	],
 	"Gender": "nf."
