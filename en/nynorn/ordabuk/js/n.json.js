@@ -7,7 +7,7 @@ let n = `[
 		"velkomen til unst i nord hjetlandi"
 	],
 	"Gender": "nn."
-}
+},
 
 {
   "Name": "norn",
@@ -16,7 +16,7 @@ let n = `[
 		"hann/hun talaði norn"
 	],
 	"Gender": "nf."
-}
+},
 
 {
   "Name": "nynorn",
