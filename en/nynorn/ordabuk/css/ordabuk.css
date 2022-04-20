@@ -23,6 +23,7 @@
 #searchbar::-moz-placeholder { color: #eee; } /* Firefox. */
 
 #div_lettertitle h2 {
+  font-size: 18px;
   text-align: left;
 }
 
