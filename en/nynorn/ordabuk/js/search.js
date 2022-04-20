@@ -12,7 +12,7 @@ function search_words() {
     if (obj_a.Name.toLowerCase().includes(input_a)) {
       const elem_a = document.createElement("li");
       elem_a.innerHTML = `${obj_a.Name} (<span style="color:#0e0;">${obj_a.Gender}</span>) - ${obj_a.Definition} <span style="font-size:14px;">(<span style="color:#777;">${obj_a.Examples}</span>)</span>`;
-      x.appendChild(elem_a);
+      x_a.appendChild(elem_a);
     }
   }
 }
