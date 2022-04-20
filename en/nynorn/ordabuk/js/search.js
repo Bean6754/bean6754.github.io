@@ -1,5 +1,6 @@
 let data_a = JSON.parse(a);
 let data_n = JSON.parse(n);
+let data_n = JSON.parse(o);
 
 function search_words() {
   let input = document.getElementById('searchbar').value;
@@ -10,6 +11,9 @@ function search_words() {
   // N
   let x_n = document.querySelector('#list-holder-n');
   x_n.innerHTML ="";
+  // O
+  let x_o = document.querySelector('#list-holder-o');
+  x_o.innerHTML ="";
 
   // A
   for (i = 0; i < data_a.length; i++) {
@@ -30,6 +34,17 @@ function search_words() {
       const elem_n = document.createElement("li");
       elem_n.innerHTML = `${obj_n.Name} (<span style="color:#0e0;">${obj_n.Gender}</span>) - ${obj_n.Definition} <span style="font-size:14px;">(<span style="color:#ccc;">${obj_n.Examples}</span>)</span>`;
       x_n.appendChild(elem_n);
+    }
+  }
+  
+  // O
+  for (i = 0; i < data_o.length; i++) {
+    let obj_o = data_o[i];
+
+    if (obj_o.Name.toLowerCase().includes(input)) {
+      const elem_o = document.createElement("li");
+      elem_o.innerHTML = `${obj_o.Name} (<span style="color:#0e0;">${obj_o.Gender}</span>) - ${obj_o.Definition} <span style="font-size:14px;">(<span style="color:#ccc;">${obj_o.Examples}</span>)</span>`;
+      x_o.appendChild(elem_o);
     }
   }
 }
