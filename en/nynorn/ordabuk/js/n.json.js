@@ -1,28 +1,30 @@
 /* Credit to: https://nornlanguage.x10.mx/index.php?nynorn_dic and http://nornlanguage.x10.mx/wiki/index.php/Main_Page */
 let n = `[
 {
-  "Name": "nord",
+  "Name": "Nord",
 	"Definition": ["north", "northern"],
 	"Examples": [
-		"velkomen til unst i nord hjetlandi"
+		"Velkomen til Unst i nord Hjetlandi"
 	],
 	"Gender": "nn."
 },
 
 {
-  "Name": "norn",
+  "Name": "Norn",
 	"Definition": ["norn language", "an extinct north germanic language that was spoken in orkney, shetland and caithness"],
 	"Examples": [
-		"hann/hun talaði norn"
+		"Hann/Hun talaði norn ",
+		"He/She spoke norn"
 	],
 	"Gender": "nf."
 },
 
 {
-  "Name": "nynorn",
+  "Name": "Nynorn",
 	"Definition": ["new norn language", "a revival project of the extinct norn language"],
 	"Examples": [
-		"eg tala nynorn"
+		"Eg tala nynorn ",
+		"I speak nynorn"
 	],
 	"Gender": "nf."
 }
