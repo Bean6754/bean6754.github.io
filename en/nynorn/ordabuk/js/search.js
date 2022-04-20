@@ -1,4 +1,4 @@
-let data = JSON.parse(a) + JSON.parse(n);
+let data = JSON.parse(a+n);
 
 function search_words() {
   let input = document.getElementById('searchbar').value;
