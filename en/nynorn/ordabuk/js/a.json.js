@@ -158,6 +158,83 @@ let a = `[
     "At amla at e-u"
   ],
   "Gender": "vw."
+},
+
+{
+  "Name": "Amos",
+  "Definition": ["alms ", "pitiful creature"],
+  "Examples": [
+    "Hannj myn vinna at amosi ut inn under sten",
+    "Jift kirkjan å Nesi vinner amos so at vi få sikken fisk"
+  ],
+  "Gender": "nn."
+},
+
+{
+  "Name": "Amp",
+  "Definition": ["restlessness"],
+  "Examples": [
+    ""
+  ],
+  "Gender": "nn."
+},
+
+{
+  "Name": "And",
+  "Definition": ["breath", "last breath"],
+  "Examples": [
+    "At blaga andena",
+    "To die, to draw one's a. to worry one to death"
+  ],
+  "Gender": "nf."
+},
+
+{
+  "Name": "Andelukk",
+  "Definition": ["accident", "misfortune"],
+  "Examples": [
+    "Dað er andelukk falljen uppå då",
+    "They met with an accident",
+    "Jift ikke andelukk ber til [kemer å, sker] kuanar",
+    "Sudden illness"
+  ],
+  "Gender": "nn."
+},
+
+{
+  "Name": "Andi",
+  "Definition": ["strong smell", "breath"],
+  "Examples": [
+    ""
+  ],
+  "Gender": "nm."
+},
+
+{
+  "Name": "Andor",
+  "Definition": ["small porch", "penthouse"],
+  "Examples": [
+    "Hannj lagdi dað uppå andor hussens"
+  ],
+  "Gender": "nn."
+},
+
+{
+  "Name": "Andu",
+  "Definition": ["to oppose", "to keep a boat against stream with oars"],
+  "Examples": [
+    ""
+  ],
+  "Gender": "vw."
+},
+
+{
+  "Name": "Anker",
+  "Definition": ["dry measure"],
+  "Examples": [
+    "Anker taatiss"
+  ],
+  "Gender": "nm."
 }
 
 ]`
