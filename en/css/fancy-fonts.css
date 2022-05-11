@@ -2,3 +2,8 @@
   font-family: Lateef-Regular;
   src: url('../fonts/Lateef-Regular.ttf');
 }
+
+.arabic-pre {
+  font-size: 32px;
+  font-weight: 400;
+}
