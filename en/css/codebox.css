@@ -16,3 +16,5 @@
 #codebox a:hover {
   text-decoration: underline;
 }
+
+.codebox_verse { color: #aaf; }
