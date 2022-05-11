@@ -21,7 +21,7 @@ a { text-decoration: none; }
 a, a:visited { color: #08e; }
 
 pre {
-  font-family: monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 700;
 }
 
