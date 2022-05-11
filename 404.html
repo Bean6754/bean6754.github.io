@@ -1,38 +1,41 @@
 <!doctype html>
 <html lang="en-gb">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>Error 404</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" type="text/css" href="css/global.css"> External style sheets do not work for GitHub.io Error pages. -->
+    <title>Error 404</title>
     <style>
-      body {
-          background-color: #151515;
-	  color: #fff6dd;
-      }
-      
-      a {
-        color: #08e;
-        font-family: sans-serif;
-        text-decoration: none;
-      }
-      
-      a:hover {
-        text-decoration: underline;
-      }
-      
-      a:visited {
-        color: #08e;
-      }
-      
-      pre {
-        color: #e00;
-      }
+body {
+  background-color: #151515;
+  color: #ffc;
+}
+
+a {
+  color: #08e;
+  font-family: sans-serif;
+}
+
+a:visited {
+  color: #08e;
+}
+
+pre {
+  color: #e00;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #252525;
+  color: #ffc;
+}
     </style>
   </head>
   <body>
     <a href="/">Home</a>
-    <pre>
+    <div class="panel">
+      <pre>
         _    _     ___     _    _        _       _
        |:|  |:|   /:::\   |:|  |:|      |_ | |  |_
        |:|  |:|  /:/'\:\  |:|  |:|      |  | |_ |_
@@ -44,6 +47,7 @@
             |:|  \:\_/:/       |:|  |  \_/ \_/ | \| |_/
             |:|   \:::/        |:|
             '"'    '"'         '"'
-    </pre>
+      </pre>
+    </div>
   </body>
 </html>
