@@ -3,8 +3,8 @@
   src: url('../fonts/Lateef-Regular.ttf');
 }
 
-.arabic-pre {
+.arabic-p {
   font-family: Lateef-Regular, sans-serif;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 400;
 }
