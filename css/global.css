@@ -16,10 +16,9 @@ body:after {
   transform: translate(-50%);
 }*/
 
+a { text-decoration: none; }
 
-a, a:visited {
-  color: #08e;
-}
+a, a:visited { color: #08e; }
 
 pre {
   color: #e80;
