@@ -1,4 +1,5 @@
 let data_a = JSON.parse(a);
+let data_f = JSON.parse(f);
 let data_h = JSON.parse(h);
 let data_n = JSON.parse(n);
 let data_o = JSON.parse(o);
@@ -9,6 +10,9 @@ function search_words() {
   // A
   let x_a = document.querySelector('#list-holder-a');
   x_a.innerHTML = "";
+  // F
+  let x_f = document.querySelector('#list-holder-f');
+  x_f.innerHTML = "";
   // H
   let x_h = document.querySelector('#list-holder-h');
   x_h.innerHTML = "";
@@ -27,6 +31,17 @@ function search_words() {
       const elem_a = document.createElement("li");
       elem_a.innerHTML = `${obj_a.Name} (<span style="color:#0e0;">${obj_a.Gender}</span>) - ${obj_a.Definition} <span style="font-size:14px;">(<span style="color:#ccc;">${obj_a.Examples}</span>)</span>`;
       x_a.appendChild(elem_a);
+    }
+  }
+  
+  // F
+  for (i = 0; i < data_f.length; i++) {
+    let obj_f = data_f[i];
+
+    if (obj_f.Name.toLowerCase().includes(input)) {
+      const elem_f = document.createElement("li");
+      elem_f.innerHTML = `${obj_f.Name} (<span style="color:#0e0;">${obj_f.Gender}</span>) - ${obj_f.Definition} <span style="font-size:14px;">(<span style="color:#ccc;">${obj_f.Examples}</span>)</span>`;
+      x_f.appendChild(elem_f);
     }
   }
   
