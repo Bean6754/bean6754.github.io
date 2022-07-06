@@ -4,7 +4,7 @@ let f = `[
   "Name": "fisk",
 	"Definition": ["Fish"],
 	"Examples": [
-		"Eg eta fisk",
+		"Eg et fisk",
 		"I eat fish"
 	],
 	"Gender": "nm."
