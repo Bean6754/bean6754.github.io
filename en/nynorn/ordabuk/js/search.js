@@ -3,6 +3,8 @@ let data_f = JSON.parse(f);
 let data_h = JSON.parse(h);
 let data_n = JSON.parse(n);
 let data_o = JSON.parse(o);
+let data_t = JSON.parse(t);
+let data_aa = JSON.parse(aa);
 
 function search_words() {
   let input = document.getElementById('searchbar').value;
@@ -18,10 +20,16 @@ function search_words() {
   x_h.innerHTML = "";
   // N
   let x_n = document.querySelector('#list-holder-n');
-  x_n.innerHTML ="";
+  x_n.innerHTML = "";
   // O
   let x_o = document.querySelector('#list-holder-o');
-  x_o.innerHTML ="";
+  x_o.innerHTML = "";
+  // T
+  let x_t = document.querySelector('#list-holder-t');
+  x_t.innerHTML = "";
+  // Å
+  let x_aa = document.querySelector('#list-holder-aa');
+  x_aa.innerHTML = "";
 
   // A
   for (i = 0; i < data_a.length; i++) {
@@ -75,6 +83,28 @@ function search_words() {
       const elem_o = document.createElement("li");
       elem_o.innerHTML = `${obj_o.Name} (<span style="color:#0e0;">${obj_o.Gender}</span>) - ${obj_o.Definition} <span style="font-size:14px;">(<span style="color:#ccc;">${obj_o.Examples}</span>)</span>`;
       x_o.appendChild(elem_o);
+    }
+  }
+  
+  // T
+  for (i = 0; i < data_t.length; i++) {
+    let obj_o = data_t[i];
+
+    if (obj_t.Name.toLowerCase().includes(input)) {
+      const elem_t = document.createElement("li");
+      elem_t.innerHTML = `${obj_t.Name} (<span style="color:#0e0;">${obj_t.Gender}</span>) - ${obj_t.Definition} <span style="font-size:14px;">(<span style="color:#ccc;">${obj_t.Examples}</span>)</span>`;
+      x_t.appendChild(elem_t);
+    }
+  }
+  
+  // Å
+  for (i = 0; i < data_aa.length; i++) {
+    let obj_aa = data_aa[i];
+
+    if (obj_aa.Name.toLowerCase().includes(input)) {
+      const elem_aa = document.createElement("li");
+      elem_aa.innerHTML = `${obj_aa.Name} (<span style="color:#0e0;">${obj_aa.Gender}</span>) - ${obj_aa.Definition} <span style="font-size:14px;">(<span style="color:#ccc;">${obj_aa.Examples}</span>)</span>`;
+      x_aa.appendChild(elem_aa);
     }
   }
 }
