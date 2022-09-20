@@ -8,7 +8,11 @@
     <link rel="stylesheet" type="text/css" href="../../../css/codebox.css">
     
     <style>
-      ol.arabiclist {list-style: arabic-indic,-moz-arabic-indic;}
+      ol.arabiclist {
+        /* I need to put in on two separate lines and in this order for some reason for it to work.. */
+        list-style-type: -moz-arabic-indic;
+        list-style-type: arabic-indic;
+      }
     </style>
   </head>
   <body>
