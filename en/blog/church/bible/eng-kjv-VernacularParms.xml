@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <vernacularParms>
+  <scriptureBook ubsAbbreviation="FRT" parm="vernacularFullName">THE TRANSLATORS TO THE READER</scriptureBook>
   <scriptureBook ubsAbbreviation="GEN" parm="vernacularFullName">The First Book of Moses, called Genesis</scriptureBook>
   <scriptureBook ubsAbbreviation="EXO" parm="vernacularFullName">The Second Book of Moses, called Exodus</scriptureBook>
   <scriptureBook ubsAbbreviation="LEV" parm="vernacularFullName">The Third Book of Moses, called Leviticus</scriptureBook>
@@ -39,6 +40,20 @@
   <scriptureBook ubsAbbreviation="HAG" parm="vernacularFullName">Haggai</scriptureBook>
   <scriptureBook ubsAbbreviation="ZEC" parm="vernacularFullName">Zechariah</scriptureBook>
   <scriptureBook ubsAbbreviation="MAL" parm="vernacularFullName">Malachi</scriptureBook>
+  <scriptureBook ubsAbbreviation="TOB" parm="vernacularFullName">Tobit</scriptureBook>
+  <scriptureBook ubsAbbreviation="JDT" parm="vernacularFullName">Judith</scriptureBook>
+  <scriptureBook ubsAbbreviation="ESG" parm="vernacularFullName">The Rest of the Chapters of The Book of Esther Which are Found Neither in the Hebrew, nor in the Chaldee</scriptureBook>
+  <scriptureBook ubsAbbreviation="WIS" parm="vernacularFullName">The Wisdom of Solomon</scriptureBook>
+  <scriptureBook ubsAbbreviation="SIR" parm="vernacularFullName">The Wisdom of Jesus the Son of Sirach, or Ecclesiasticus</scriptureBook>
+  <scriptureBook ubsAbbreviation="BAR" parm="vernacularFullName">Baruch</scriptureBook>
+  <scriptureBook ubsAbbreviation="S3Y" parm="vernacularFullName">The Song of The Three Holy Children</scriptureBook>
+  <scriptureBook ubsAbbreviation="SUS" parm="vernacularFullName">The History of Susanna</scriptureBook>
+  <scriptureBook ubsAbbreviation="BEL" parm="vernacularFullName">The History of the Destruction of Bel and the Dragon</scriptureBook>
+  <scriptureBook ubsAbbreviation="1MA" parm="vernacularFullName">The First Book of the Maccabees</scriptureBook>
+  <scriptureBook ubsAbbreviation="2MA" parm="vernacularFullName">The Second Book of the Maccabees</scriptureBook>
+  <scriptureBook ubsAbbreviation="1ES" parm="vernacularFullName">1 Esdras</scriptureBook>
+  <scriptureBook ubsAbbreviation="MAN" parm="vernacularFullName">The Prayer of Manasseh King of Judah When He was Held Captive in Babylon</scriptureBook>
+  <scriptureBook ubsAbbreviation="2ES" parm="vernacularFullName">2 Esdras</scriptureBook>
   <scriptureBook ubsAbbreviation="MAT" parm="vernacularFullName">THE GOSPEL ACCORDING TO ST. MATTHEW</scriptureBook>
   <scriptureBook ubsAbbreviation="MRK" parm="vernacularFullName">THE GOSPEL ACCORDING TO ST. MARK</scriptureBook>
   <scriptureBook ubsAbbreviation="LUK" parm="vernacularFullName">THE GOSPEL ACCORDING TO ST. LUKE</scriptureBook>
@@ -66,6 +81,7 @@
   <scriptureBook ubsAbbreviation="3JN" parm="vernacularFullName">THE THIRD EPISTLE OF JOHN</scriptureBook>
   <scriptureBook ubsAbbreviation="JUD" parm="vernacularFullName">THE GENERAL EPISTLE OF JUDE</scriptureBook>
   <scriptureBook ubsAbbreviation="REV" parm="vernacularFullName">THE REVELATION OF ST. JOHN THE DIVINE</scriptureBook>
+  <scriptureBook ubsAbbreviation="FRT" parm="vernacularAbbreviatedName">Preface</scriptureBook>
   <scriptureBook ubsAbbreviation="GEN" parm="vernacularAbbreviatedName">Genesis</scriptureBook>
   <scriptureBook ubsAbbreviation="EXO" parm="vernacularAbbreviatedName">Exodus</scriptureBook>
   <scriptureBook ubsAbbreviation="LEV" parm="vernacularAbbreviatedName">Leviticus</scriptureBook>
@@ -105,6 +121,20 @@
   <scriptureBook ubsAbbreviation="HAG" parm="vernacularAbbreviatedName">Haggai</scriptureBook>
   <scriptureBook ubsAbbreviation="ZEC" parm="vernacularAbbreviatedName">Zechariah</scriptureBook>
   <scriptureBook ubsAbbreviation="MAL" parm="vernacularAbbreviatedName">Malachi</scriptureBook>
+  <scriptureBook ubsAbbreviation="TOB" parm="vernacularAbbreviatedName">Tobit</scriptureBook>
+  <scriptureBook ubsAbbreviation="JDT" parm="vernacularAbbreviatedName">Judith</scriptureBook>
+  <scriptureBook ubsAbbreviation="ESG" parm="vernacularAbbreviatedName">Esther (Greek)</scriptureBook>
+  <scriptureBook ubsAbbreviation="WIS" parm="vernacularAbbreviatedName">Wisdom of Solomon</scriptureBook>
+  <scriptureBook ubsAbbreviation="SIR" parm="vernacularAbbreviatedName">Sirach</scriptureBook>
+  <scriptureBook ubsAbbreviation="BAR" parm="vernacularAbbreviatedName">Baruch</scriptureBook>
+  <scriptureBook ubsAbbreviation="S3Y" parm="vernacularAbbreviatedName">3 Holy Children's Song</scriptureBook>
+  <scriptureBook ubsAbbreviation="SUS" parm="vernacularAbbreviatedName">Susanna</scriptureBook>
+  <scriptureBook ubsAbbreviation="BEL" parm="vernacularAbbreviatedName">Bel and the Dragon</scriptureBook>
+  <scriptureBook ubsAbbreviation="1MA" parm="vernacularAbbreviatedName">1 Maccabees</scriptureBook>
+  <scriptureBook ubsAbbreviation="2MA" parm="vernacularAbbreviatedName">2 Maccabees</scriptureBook>
+  <scriptureBook ubsAbbreviation="1ES" parm="vernacularAbbreviatedName">1 Esdras</scriptureBook>
+  <scriptureBook ubsAbbreviation="MAN" parm="vernacularAbbreviatedName">Prayer of Manasses</scriptureBook>
+  <scriptureBook ubsAbbreviation="2ES" parm="vernacularAbbreviatedName">2 Esdras</scriptureBook>
   <scriptureBook ubsAbbreviation="MAT" parm="vernacularAbbreviatedName">Matthew</scriptureBook>
   <scriptureBook ubsAbbreviation="MRK" parm="vernacularAbbreviatedName">Mark</scriptureBook>
   <scriptureBook ubsAbbreviation="LUK" parm="vernacularAbbreviatedName">Luke</scriptureBook>
@@ -132,6 +162,7 @@
   <scriptureBook ubsAbbreviation="3JN" parm="vernacularAbbreviatedName">3 John</scriptureBook>
   <scriptureBook ubsAbbreviation="JUD" parm="vernacularAbbreviatedName">Jude</scriptureBook>
   <scriptureBook ubsAbbreviation="REV" parm="vernacularAbbreviatedName">Revelation</scriptureBook>
+  <scriptureBook ubsAbbreviation="FRT" parm="vernacularBookAbbreviation">Pre</scriptureBook>
   <scriptureBook ubsAbbreviation="GEN" parm="vernacularBookAbbreviation">Gen</scriptureBook>
   <scriptureBook ubsAbbreviation="EXO" parm="vernacularBookAbbreviation">Exo</scriptureBook>
   <scriptureBook ubsAbbreviation="LEV" parm="vernacularBookAbbreviation">Lev</scriptureBook>
@@ -171,6 +202,20 @@
   <scriptureBook ubsAbbreviation="HAG" parm="vernacularBookAbbreviation">Hag</scriptureBook>
   <scriptureBook ubsAbbreviation="ZEC" parm="vernacularBookAbbreviation">Zec</scriptureBook>
   <scriptureBook ubsAbbreviation="MAL" parm="vernacularBookAbbreviation">Mal</scriptureBook>
+  <scriptureBook ubsAbbreviation="TOB" parm="vernacularBookAbbreviation">Tob</scriptureBook>
+  <scriptureBook ubsAbbreviation="JDT" parm="vernacularBookAbbreviation">Jdt</scriptureBook>
+  <scriptureBook ubsAbbreviation="ESG" parm="vernacularBookAbbreviation">EsG</scriptureBook>
+  <scriptureBook ubsAbbreviation="WIS" parm="vernacularBookAbbreviation">Wis</scriptureBook>
+  <scriptureBook ubsAbbreviation="SIR" parm="vernacularBookAbbreviation">Sir</scriptureBook>
+  <scriptureBook ubsAbbreviation="BAR" parm="vernacularBookAbbreviation">Bar</scriptureBook>
+  <scriptureBook ubsAbbreviation="S3Y" parm="vernacularBookAbbreviation">S3Y</scriptureBook>
+  <scriptureBook ubsAbbreviation="SUS" parm="vernacularBookAbbreviation">Sus</scriptureBook>
+  <scriptureBook ubsAbbreviation="BEL" parm="vernacularBookAbbreviation">Bel</scriptureBook>
+  <scriptureBook ubsAbbreviation="1MA" parm="vernacularBookAbbreviation">1Ma</scriptureBook>
+  <scriptureBook ubsAbbreviation="2MA" parm="vernacularBookAbbreviation">2Ma</scriptureBook>
+  <scriptureBook ubsAbbreviation="1ES" parm="vernacularBookAbbreviation">1Es</scriptureBook>
+  <scriptureBook ubsAbbreviation="MAN" parm="vernacularBookAbbreviation">Man</scriptureBook>
+  <scriptureBook ubsAbbreviation="2ES" parm="vernacularBookAbbreviation">2Es</scriptureBook>
   <scriptureBook ubsAbbreviation="MAT" parm="vernacularBookAbbreviation">Mat</scriptureBook>
   <scriptureBook ubsAbbreviation="MRK" parm="vernacularBookAbbreviation">Mrk</scriptureBook>
   <scriptureBook ubsAbbreviation="LUK" parm="vernacularBookAbbreviation">Luk</scriptureBook>
@@ -201,12 +246,12 @@
   <dcMeta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dublincore.org/schemas/xmls/qdc/2008/02/11/dc.xsd" xmlns:dc="http://purl.org/dc/elements/1.1/">
     <dc:creator />
     <dc:contributor />
-    <dc:title>King James (Authorized) Version</dc:title>
-    <dc:description>The King James Version or Authorized Version of the Holy Bible, using the standardized text of 1769, protocanon only, with Strong's numbers added.</dc:description>
-    <dc:date>2022-03-03</dc:date>
+    <dc:title>King James Version + Apocrypha</dc:title>
+    <dc:description>The King James Version or Authorized Version of the Holy Bible, using the standardized text of 1769, with Apocrypha/Deuterocanon</dc:description>
+    <dc:date>2022-08-16</dc:date>
     <dc:format>digital</dc:format>
     <dc:language>eng</dc:language>
-    <dc:publisher>PNG Bible Translation Association</dc:publisher>
+    <dc:publisher>eBible.org</dc:publisher>
     <dc:rights>Public DomainLetters patent issued by King James with no expiration date means that to print this translation in the United Kingdom or import printed copies into the UK, you need permission. Currently, the Cambridge University Press, the Oxford University Press, and Collins have the exclusive right to print this Bible translation in the UK. This royal decree has no effect outside of the UK, where this work is firmly in the Public Domain. Please see http://www.cambridge.org/about-us/who-we-are/queens-printers-patent and https://en.wikipedia.org/wiki/King_James_Version#Copyright_status for more information.
 
 This free text of the King James Version of the Holy Bible is brought to you courtesy of the &lt;a href="https://crosswire.org/"&gt;Crosswire Bible Society&lt;/a&gt; and &lt;a href="https://eBible.org"&gt;eBible.org&lt;/a&gt;.</dc:rights>
@@ -229,5 +274,5 @@ This free text of the King James Version of the Holy Bible is brought to you cou
   <langName>English</langName>
   <textDir>ltr</textDir>
   <hasNotes>True</hasNotes>
-  <coverTitle>King James (Authorized) Version</coverTitle>
+  <coverTitle>King James Version + Apocrypha</coverTitle>
 </vernacularParms>
