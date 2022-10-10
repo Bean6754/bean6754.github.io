@@ -1,3 +1,18 @@
+html {
+  background-color: #151515;
+  color: #ffc;
+  font-family: sans-serif;
+}
+a { text-decoration: none; }
+a, a:visited { color: #08e; }
+div.mainindex { background-color: #222; }
+div.toc { color: #ffc; }
+div.fine { color: #ccc; }
+div.mt, div.p { color: #ffc; }
+div.chapterlabel { color:#e80; }
+a.notemark, span.notemark, a.notebackref, span.ft { color: #e80; }
+div.copyright { color: #ccc; }
+
 *	{margin:0;padding:0}
 html,body	{height:100%;font-size:1.2em;line-height:1.4em;color:black}
 .main	{min-height:100%;margin-bottom:-4em;padding:0.5em}
