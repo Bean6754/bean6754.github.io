@@ -8,5 +8,15 @@ let h = `[
 		"Welcome to Lerwick in south Shetland"
 	],
 	"Gender": "nn."
+},
+
+{
+  "Name": "Hval",
+    "Definition": ["Whale", "a whale"],
+    "Examples": [
+      "Hvaler er stur - ",
+      "Whales are big"
+    ],
+    "Gender": "nm."
 }
 ]`
