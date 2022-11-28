@@ -59,12 +59,12 @@ function search_words() {
   }
   
   // D
-  for(i = 0; i < data_d.length; i++) {
+  for (i = 0; i < data_d.length; i++) {
     let obj_d = data_d[i];
 
     if (obj_d.Name.toLowerCase().includes(input)) {
       const elem_d = document.createElement("li");
-      elem_d.innerHTML = `${obj_d.Name} (<span style="color:#0e0;">${obj_d.Gender}</span>) - ${obj_d.Definition} <span style="font-size:14px;">(<style="color:#ccc;">${obj_d.Examples}</span>)</span>`;
+      elem_d.innerHTML = `${obj_d.Name} (<span style="color:#0e0;">${obj_d.Gender}</span>) - ${obj_d.Definition} <span style="font-size:14px;">(<span style="color:#ccc;">${obj_d.Examples}</span>)</span>`;
       x_d.appendChild(elem_d);
     }
   }
