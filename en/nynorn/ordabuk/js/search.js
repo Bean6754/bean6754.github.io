@@ -2,7 +2,7 @@ let data_a = JSON.parse(a);
 let data_d = JSON.parse(d);
 let data_f = JSON.parse(f);
 let data_h = JSON.parse(h);
-let data_ii = JSON.parse(ii); // Can't use 'i'.
+let data_i = JSON.parse(i);
 let data_n = JSON.parse(n);
 let data_o = JSON.parse(o);
 let data_r = JSON.parse(r);
@@ -26,8 +26,8 @@ function search_words() {
   let x_h = document.querySelector('#list-holder-h');
   x_h.innerHTML = "";
   // I
-  let x_ii = document.querySelector('#list-holder-i');
-  x_ii.innerHTML = "";
+  let x_i = document.querySelector('#list-holder-i');
+  x_i.innerHTML = "";
   // N
   let x_n = document.querySelector('#list-holder-n');
   x_n.innerHTML = "";
@@ -48,8 +48,8 @@ function search_words() {
   x_aa.innerHTML = "";
 
   // A
-  for (i = 0; i < data_a.length; i++) {
-    let obj_a = data_a[i];
+  for (iVar = 0; iVar < data_a.length; iVar++) {
+    let obj_a = data_a[iVar];
 
     if (obj_a.Name.toLowerCase().includes(input)) {
       const elem_a = document.createElement("li");
@@ -59,8 +59,8 @@ function search_words() {
   }
   
   // D
-  for (i = 0; i < data_d.length; i++) {
-    let obj_d = data_d[i];
+  for (iVar = 0; iVar < data_d.length; iVar++) {
+    let obj_d = data_d[iVar];
 
     if (obj_d.Name.toLowerCase().includes(input)) {
       const elem_d = document.createElement("li");
@@ -70,8 +70,8 @@ function search_words() {
   }
   
   // F
-  for (i = 0; i < data_f.length; i++) {
-    let obj_f = data_f[i];
+  for (iVar = 0; iVar < data_f.length; iVar++) {
+    let obj_f = data_f[iVar];
 
     if (obj_f.Name.toLowerCase().includes(input)) {
       const elem_f = document.createElement("li");
@@ -81,8 +81,8 @@ function search_words() {
   }
   
   // H
-  for (i = 0; i < data_h.length; i++) {
-    let obj_h = data_h[i];
+  for (iVar = 0; iVar < data_h.length; iVar++) {
+    let obj_h = data_h[iVar];
 
     if (obj_h.Name.toLowerCase().includes(input)) {
       const elem_h = document.createElement("li");
@@ -92,19 +92,19 @@ function search_words() {
   }
   
   // I
-  for (i = 0; i < data_ii.length; i++) {
-    let obj_ii = data_i[ii];
+  for (iVar = 0; iVar < data_i.length; iVar++) {
+    let obj_i = data_i[iVar];
 
-    if (obj_ii.Name.toLowerCase().includes(input)) {
-      const elem_ii = document.createElement("li");
-      elem_ii.innerHTML = `${obj_ii.Name} (<span style="color:#0e0;">${obj_ii.Gender}</span>) - ${obj_ii.Definition} <span style="font-size:14px;">(<span style="color:#ccc;">${obj_ii.Examples}</span>)</span>`;
-      x_ii.appendChild(elem_ii);
+    if (obj_i.Name.toLowerCase().includes(input)) {
+      const elem_i = document.createElement("li");
+      elem_i.innerHTML = `${obj_i.Name} (<span style="color:#0e0;">${obj_i.Gender}</span>) - ${obj_i.Definition} <span style="font-size:14px;">(<span style="color:#ccc;">${obj_i.Examples}</span>)</span>`;
+      x_i.appendChild(elem_i);
     }
   }
   
   // N
-  for (i = 0; i < data_n.length; i++) {
-    let obj_n = data_n[i];
+  for (iVar = 0; iVar < data_n.length; iVar++) {
+    let obj_n = data_n[iVar];
 
     if (obj_n.Name.toLowerCase().includes(input)) {
       const elem_n = document.createElement("li");
@@ -114,8 +114,8 @@ function search_words() {
   }
   
   // O
-  for (i = 0; i < data_o.length; i++) {
-    let obj_o = data_o[i];
+  for (iVar = 0; iVar < data_o.length; iVar++) {
+    let obj_o = data_o[iVar];
 
     if (obj_o.Name.toLowerCase().includes(input)) {
       const elem_o = document.createElement("li");
@@ -125,9 +125,9 @@ function search_words() {
   }
   
   // R
-  for (i = 0; i < data_r.length; i++) {
-    let obj_r = data_r[i];
-    
+  for (iVar = 0; iVar < data_r.length; iVar++) {
+    let obj_r = data_r[iVar];
+
     if (obj_r.Name.toLowerCase().includes(input)) {
       const elem_r = document.createElement("li");
       elem_r.innerHTML = `${obj_r.Name} (<span style="color:#0e0;">${obj_r.Gender}</span>) - ${obj_r.Definition} <span style="font-size:14px;">(<span style="color:#ccc;">${obj_r.Examples}</span>)</span>`;
@@ -136,9 +136,9 @@ function search_words() {
   }
   
   // S
-  for (i = 0; i < data_s.length; i++) {
-    let obj_s = data_s[i];
-    
+  for (iVar = 0; iVar < data_s.length; iVar++) {
+    let obj_s = data_s[iVar];
+
     if (obj_s.Name.toLowerCase().includes(input)) {
       const elem_s = document.createElement("li");
       elem_s.innerHTML = `${obj_s.Name} (<span style="color:#0e0;">${obj_s.Gender}</span>) - ${obj_s.Definition} <span style="font-size:14px;">(<span style="color:#ccc;">${obj_s.Examples}</span>)</span>`;
@@ -147,8 +147,8 @@ function search_words() {
   }
   
   // T
-  for (i = 0; i < data_t.length; i++) {
-    let obj_o = data_t[i];
+  for (iVar = 0; iVar < data_t.length; iVar++) {
+    let obj_t = data_t[iVar];
 
     if (obj_t.Name.toLowerCase().includes(input)) {
       const elem_t = document.createElement("li");
@@ -158,8 +158,8 @@ function search_words() {
   }
   
   // Å
-  for (i = 0; i < data_aa.length; i++) {
-    let obj_aa = data_aa[i];
+  for (iVar = 0; iVar < data_aa.length; iVar++) {
+    let obj_aa = data_aa[iVar];
 
     if (obj_aa.Name.toLowerCase().includes(input)) {
       const elem_aa = document.createElement("li");
