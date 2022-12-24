@@ -1,4 +1,5 @@
 let data_a = JSON.parse(a);
+let data_b = JSON.parse(b);
 let data_d = JSON.parse(d);
 let data_f = JSON.parse(f);
 let data_h = JSON.parse(h);
@@ -16,6 +17,9 @@ function search_words() {
   // A
   let x_a = document.querySelector('#list-holder-a');
   x_a.innerHTML = "";
+  // B
+  let x_b = document.querySelector('#list-holder-b');
+  x_b.innerHTML = "";
   // D
   let x_d = document.querySelector('#list-holder-d');
   x_d.innerHTML = "";
@@ -57,7 +61,16 @@ function search_words() {
       x_a.appendChild(elem_a);
     }
   }
-  
+  // B
+  for (iVar = 0; iVar < data_b.length; iVar++) {
+    let obj_b = data_b[iVar];
+
+    if (obj_b.Name.toLowerCase().includes(input)) {
+      const elem_b = document.createElement("li");
+      elem_b.innerHTML = `${obj_b.Name} (<span style="color:#0e0;">${obj_b.Gender}</span>) - ${obj_b.Definition} <span style="font-size:14px;">(<span style="color:#ccc;">${obj_b.Examples}</span>)</span>`;
+      x_b.appendChild(elem_b);
+    }
+  }
   // D
   for (iVar = 0; iVar < data_d.length; iVar++) {
     let obj_d = data_d[iVar];

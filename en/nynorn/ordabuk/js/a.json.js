@@ -74,7 +74,7 @@ let a = `[
 
 {
   "Name": "Agment",
-  "Definition": ["anxiety", "unrest"],
+  "Definition": ["anxiety ", "unrest"],
   "Examples": [
     ""
   ],
@@ -83,7 +83,7 @@ let a = `[
 
 {
   "Name": "Aker",
-  "Definition": ["corn(field) and hay", "stalks of corn", "something destroyed"],
+  "Definition": ["corn(field) and hay ", "stalks of corn ", "something destroyed"],
   "Examples": [
     "Aker og hø ",
     "Corn(field) and hay ",
@@ -181,7 +181,7 @@ let a = `[
 
 {
   "Name": "And",
-  "Definition": ["breath", "last breath"],
+  "Definition": ["breath ", "last breath"],
   "Examples": [
     "At blaga andena",
     "To die, to draw one's a. to worry one to death"
@@ -191,7 +191,7 @@ let a = `[
 
 {
   "Name": "Andelukk",
-  "Definition": ["accident", "misfortune"],
+  "Definition": ["accident ", "misfortune"],
   "Examples": [
     "Dað er andelukk falljen uppå då",
     "They met with an accident",
@@ -203,7 +203,7 @@ let a = `[
 
 {
   "Name": "Andi",
-  "Definition": ["strong smell", "breath"],
+  "Definition": ["strong smell ", "breath"],
   "Examples": [
     ""
   ],
@@ -212,7 +212,7 @@ let a = `[
 
 {
   "Name": "Andor",
-  "Definition": ["small porch", "penthouse"],
+  "Definition": ["small porch ", "penthouse"],
   "Examples": [
     "Hannj lagdi dað uppå andor hussens"
   ],
@@ -221,7 +221,7 @@ let a = `[
 
 {
   "Name": "Andu",
-  "Definition": ["to oppose", "to keep a boat against stream with oars"],
+  "Definition": ["to oppose ", "to keep a boat against stream with oars"],
   "Examples": [
     ""
   ],

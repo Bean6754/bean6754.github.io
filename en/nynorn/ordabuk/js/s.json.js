@@ -14,7 +14,7 @@ let s = `[
   "Name": "Sul",
   "Definition": ["Sun", "the sun"],
   "Examples": [
-    "Sulen loftast" - ,
+    "Sulen loftast - ",
     "The sun arises."
   ],
   "Gender": "nf."

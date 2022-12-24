@@ -2,7 +2,7 @@
 let aa = `[
 {
   "Name": "Å",
-	"Definition": ["On", "In"],
+	"Definition": ["On ", "In"],
 	"Examples": [
 		"Du skriva å norn - ",
 		"You write in norn "
