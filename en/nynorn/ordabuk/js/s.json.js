@@ -9,5 +9,14 @@ let s = `[
           "See also."
 	],
 	"Gender": "vv."
+},
+{
+  "Name": "Sul",
+  "Definition": ["Sun", "the sun"],
+  "Examples": [
+    "Sulen loftast" - ,
+    "The sun arises."
+  ],
+  "Gender": "nf."
 }
 ]`

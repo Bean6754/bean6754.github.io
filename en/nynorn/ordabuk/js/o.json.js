@@ -5,8 +5,17 @@ let o = `[
 	"Definition": ["Orkney", "the Orkney islands"],
 	"Examples": [
 		"Velkomen til Hoy i sud Orknøjon - ",
-		"Welcome to Hoy in south Orkney"
+		"Welcome to Hoy in south Orkney."
 	],
 	"Gender": "nf."
+},
+{
+  "Name": "Orðabuk",
+    "Definition": ["Dictionary", "word-book"],
+    "Examples": [
+      "Eg er les orðabuken - ",
+      "I am reading the dictionary."
+    ]
+    "Gender": "nf."
 }
 ]`
