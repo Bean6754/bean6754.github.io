@@ -8,6 +8,7 @@
 
 #element p {
     background-color: #222;
+    border: 2px solid #333;
     font-size: 14px;
     padding: 8px;
 }
