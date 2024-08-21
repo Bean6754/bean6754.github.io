@@ -1,5 +1,6 @@
-body { background-color: #151515 !important; color: #ffc !important; }
-a, a:visited { color: #08e !important; }
+body { background-color: #151515; color: #ffc; }
+a { text-decoration: none; }
+a, a:visited { color: #08e; }
 
 
 *	{margin:0;padding:0}
