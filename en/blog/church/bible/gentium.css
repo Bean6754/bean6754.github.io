@@ -1,4 +1,5 @@
 body { background-color: #151515 !important; color: #ffc !important; }
+a, a:visited { color: #08e !important; }
 
 
 *	{margin:0;padding:0}
